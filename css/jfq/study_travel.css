@@ -1,0 +1,226 @@
+body{font-family: none;}
+#study_travel{
+    padding-top: 110px;
+}
+
+
+#study_travel .main{
+    max-width: 1400px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.breadcrumb-section {
+    margin-top: 17px;
+    margin-left: 5px;
+    background: none;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.breadcrumb-section .breadcrumb {
+    background: none;
+    padding: 15px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0;
+}
+.breadcrumb-section .breadcrumb li {
+    text-transform: none;
+    font-size: 16px;
+    line-height: 24px;
+}
+.breadcrumb-section .breadcrumb li a {
+    color: #333333;
+    font-size: 16px;
+    border-right: 1px solid #333333;
+    padding-right: 10px;
+    line-height: 18px;
+    text-transform: capitalize;
+}
+.breadcrumb-section .breadcrumb li.active {
+    /* padding-left: 10px; */
+    color: #ee2d42;
+    border-right: 0;
+    font-weight: bold;
+}
+#study_travel .container{
+    padding: 0;
+}
+  
+/* 开始部分 */
+#study_travel .aside_img{
+    position: absolute;
+    top: 0;
+    right: 6px;
+    width: 100%;
+    max-width: 695px;
+}
+#study_travel .aside_img .img_mb {
+    display: none;
+}
+
+
+
+/* 顶部分 */
+#study_travel .main-top{
+    clear: both;
+    max-width: 940px;
+    margin: auto;
+    min-height: 350px;
+    padding-top: 40px;
+}
+#study_travel .main-top h2{
+    font-weight: bold;
+    color: #043458;
+    max-width: 415px;
+    font-size: 50px;
+    line-height: 60px;
+    margin-left: 35px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#study_travel .main-top p{
+    max-width: 459px;
+    line-height: 28px;
+    margin-left: 35px;
+}
+
+
+/* 中间部分 */
+#study_travel .main-content{
+    padding-bottom: 36px;
+    margin: 143px auto 0;
+    max-width: 940px;
+    position: relative;
+    left: -9px;
+}
+
+#study_travel .main-content .learn-content{
+    margin-top: -50px;
+    margin-left: 42px;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+#study_travel .main-content .learn-content-line{
+    width: 190px;
+    height: 100%;
+    background: url(../../img/jfq/image/line.png) center 0 no-repeat;
+    position: absolute;
+    z-index: 0;
+    top: 50px;
+    left: 50%;
+    margin-left: -85px;
+}
+#study_travel .main-content .learn-content-line .content-active-line{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: url(../../img/jfq/image/line-active.png) center 0 no-repeat;
+}
+#study_travel .main-content .learn-content .learn-content-item{
+    display: flex;
+    justify-content: space-between;
+}
+#study_travel .main-content .learn-content .learn-content-item:nth-child(odd){
+    flex-direction: row-reverse;
+    
+}
+#study_travel .main-content .learn-content .learn-content-item .learn-title,#study_travel .main-content .learn-content .learn-content-item .text-middle{
+    color: #043458;
+}
+#study_travel .main-content .learn-content .learn-content-item:nth-child(odd) .learn-title,#study_travel .main-content .learn-content .learn-content-item:nth-child(odd) .text-middle{
+    color: #ee2d42;
+}
+.learn-content-item:nth-child(odd) .learn-content-text .learn-content-count{
+    background:#ee2d42;
+}
+.learn-content-item:nth-child(odd) .learn-content-text .learn-content-count:after{
+    border-left: 7px solid #ee2d42;
+}
+.learn-content-item:nth-child(even) .learn-content-text .learn-content-count{
+    background: #043458;
+}
+.learn-content-item:nth-child(even) .learn-content-text .learn-content-count:after{
+    border-left: 7px solid #043458;
+}
+/* 线节点部分 */
+.learn-content-line .node{
+    width: 34px;
+    height: 34px;
+    background: #c5c5c5;
+    position: absolute;
+    z-index: 10;
+    border-radius: 50%;
+}
+.learn-content-line .node.active{
+    background: #ee2d42;
+}
+.learn-content-line .node.active:after{
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -9px 0 0 -9px;
+    border-radius: 50%;
+}
+.learn-content-line .node .node-num {
+    position: absolute;
+    top: 50%;
+    margin-top: -38px;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    line-height: 75px;
+    font-weight: bold;
+    border-radius: 50%;
+}
+.learn-content-line .node .node-num:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+}
+.learn-content-line .node:nth-child(odd) .node-num:before{
+    right: 100%;
+    margin-right: -1px;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 10px solid #ee2d42;
+}
+.learn-content-line .node:nth-child(even) .node-num:before{
+    left: 100%;
+    margin-left: -1px;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 10px solid #043458;
+}
+.learn-content-line .node:nth-child(odd) .node-num{
+    background: #ee2d42;
+    left: 100%;
+    margin-left: 20px;
+}
+.learn-content-line .node:nth-child(even) .node-num{
+    background: #043458;
+    right: 100%;
+    margin-right: 20px;
+}
+.main-bottom{
+    float: right;
+    margin-top: -454px;
+    margin-right: -13px;
+    margin-bottom: -78px;
+}
+.main-bottom img:nth-child(1){
+    display:block;
+}
+.main-bottom img:nth-child(2){
+    display:none;
+}
