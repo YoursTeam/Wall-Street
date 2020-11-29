@@ -1,0 +1,165 @@
+/*清除bootstrap默认样式*/
+body{font-family: none;}
+@media (min-width: 768px) {
+    .container {
+        width:auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width:auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width:auto;
+    }
+}
+.breadcrumb>li+li:before{
+    content:""
+}
+/*设置页面媒体查询*/
+@media (min-width: 769px){
+    #study_travel {
+        min-width: 1180px;
+    }
+}
+@media (min-width: 1200px) {
+    .main {
+        max-width: 1400px;
+    } 
+    #study_travel .container{
+      max-width: 1180px;
+    }
+}
+@media (max-width: 1365px) and (min-width: 768px){
+    #study_travel .aside_img {
+        max-width: 600px;
+    }
+}
+/*页面公共样式*/
+*{outline:none;}
+#study_travel{
+    padding-top: 110px;
+}
+#study_travel .container{
+    padding: 0;
+}
+#study_travel .main{
+    max-width: 1400px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.breadcrumb-section {
+    margin-top: 17px;
+    margin-left: 5px;
+    background: none;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.breadcrumb-section .breadcrumb {
+    background: none;
+    padding: 15px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0;
+}
+.breadcrumb-section .breadcrumb li {
+    text-transform: none;
+    font-size: 16px;
+    line-height: 24px;
+}
+.breadcrumb-section .breadcrumb li a {
+    color: #333333;
+    font-size: 16px;
+    border-right: 1px solid #333333;
+    padding-right: 10px;
+    line-height: 18px;
+    text-transform: capitalize;
+}
+.breadcrumb-section .breadcrumb li.active {
+    color: #ee2d42;
+    border-right: 0;
+    font-weight: bold;
+}
+@media (max-width: 767px){
+    #study_travel .main{
+        max-width: 320px;
+    } 
+    .breadcrumb-section{
+        display: none;
+    }
+    #study_travel .container{
+        width: 100%
+    }
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.item1{
+    height:560px;
+}
+.item2{
+    height: 534px;
+}
+.item3{
+    height: 475px;
+}
+.item4{
+    height: 333px;
+}
+.item5{
+    height: 578px;
+}
+.item6{
+    height: 388px;
+}
+.item7{
+    height: 440px;
+}
+.item8{
+    height: 144px;
+}
+.node1{
+    top: -5px;
+    left: -12px;
+}
+.node2{
+    top: 558px;
+    right: 8px;
+}
+.node3{
+    top: 1088px;
+    left: 39px;
+}
+.node4{
+    top: 1541px;
+    left: 21px;
+}
+.node5{
+    top: 1879px;
+    right: 2px;
+}
+.node6{
+    top: 2455px;
+    left: 13px;
+}
+.node7{
+    top: 2842px;
+    left: 24px;
+}
+.node8{
+    top: 3305px;
+    right: -13px;
+}
+video {
+    width: 100%;
+    cursor: pointer;
+}
