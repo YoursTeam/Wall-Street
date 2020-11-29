@@ -102,64 +102,8 @@ h1, .h1, h2, .h2, h3, .h3 {
     margin-top: 20px;
     margin-bottom: 10px;
 }
-
-.item1{
-    height:560px;
-}
-.item2{
-    height: 534px;
-}
-.item3{
-    height: 475px;
-}
-.item4{
-    height: 333px;
-}
-.item5{
-    height: 578px;
-}
-.item6{
-    height: 388px;
-}
-.item7{
-    height: 440px;
-}
-.item8{
-    height: 144px;
-}
-.node1{
-    top: -5px;
-    left: -12px;
-}
-.node2{
-    top: 558px;
-    right: 8px;
-}
-.node3{
-    top: 1088px;
-    left: 39px;
-}
-.node4{
-    top: 1541px;
-    left: 21px;
-}
-.node5{
-    top: 1879px;
-    right: 2px;
-}
-.node6{
-    top: 2455px;
-    left: 13px;
-}
-.node7{
-    top: 2842px;
-    left: 24px;
-}
-.node8{
-    top: 3305px;
-    right: -13px;
-}
-video {
-    width: 100%;
-    cursor: pointer;
+.clearFix:after{
+    content:"";
+    display:block;
+    clear:both;
 }

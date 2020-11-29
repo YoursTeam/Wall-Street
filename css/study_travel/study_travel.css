@@ -57,7 +57,7 @@
 #study_travel .main-content .learn-content-line{
     width: 190px;
     height: 100%;
-    background: url(../../../img/jfq/image/line.png) center 0 no-repeat;
+    background: url(../../img/image/line.png) center 0 no-repeat;
     position: absolute;
     z-index: 0;
     top: 50px;
@@ -69,7 +69,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: url(../../../img/jfq/image/line-active.png) center 0 no-repeat;
+    background: url(../../img/image/line-active.png) center 0 no-repeat;
 }
 #study_travel .main-content .learn-content .learn-content-item{
     display: flex;
@@ -247,7 +247,7 @@
     transform: translate(-50%,-50%);
     width: 62px;
     height: 62px;
-    background: url(../../../img/jfq/image/play-btn.png) 0 0 no-repeat;
+    background: url(../../img/image/play-btn.png) 0 0 no-repeat;
     z-index: 10;
     opacity: 1;
 }
@@ -278,4 +278,65 @@
 .item8{
     position: relative;
     justify-content: start;
+}
+
+.item1{
+    height:560px;
+}
+.item2{
+    height: 534px;
+}
+.item3{
+    height: 475px;
+}
+.item4{
+    height: 333px;
+}
+.item5{
+    height: 578px;
+}
+.item6{
+    height: 388px;
+}
+.item7{
+    height: 440px;
+}
+.item8{
+    height: 144px;
+}
+.node1{
+    top: -5px;
+    left: -12px;
+}
+.node2{
+    top: 558px;
+    right: 8px;
+}
+.node3{
+    top: 1088px;
+    left: 39px;
+}
+.node4{
+    top: 1541px;
+    left: 21px;
+}
+.node5{
+    top: 1879px;
+    right: 2px;
+}
+.node6{
+    top: 2455px;
+    left: 13px;
+}
+.node7{
+    top: 2842px;
+    left: 24px;
+}
+.node8{
+    top: 3305px;
+    right: -13px;
+}
+video {
+    width: 100%;
+    cursor: pointer;
 }
