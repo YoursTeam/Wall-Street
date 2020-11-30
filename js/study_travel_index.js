@@ -13,15 +13,15 @@ $(function(){
         let scrollY = $(document).scrollTop() - HEIGHT;
         if(scrollY>=arr[0]){
             $aL.height(scrollY);
-            if($(window).width()>767){
-                arr.forEach((item,index)=>{
-                    if(scrollY>item){
-                        $($node[index]).addClass("active");
-                    }else if(scrollY <= item){
-                        $($node[index]).removeClass("active");
-                    }
-                })
-            }
+        }
+        if($(window).width()>767){
+            arr.forEach((item,index)=>{
+                if(scrollY>item){
+                    $($node[index]).addClass("active");
+                }else if(scrollY <= item){
+                    $($node[index]).removeClass("active");
+                }
+            })
         }
     }
 })

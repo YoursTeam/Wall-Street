@@ -88,7 +88,7 @@ body{font-family: none;}
 }
 @media (max-width: 767px){
     #study_travel .main{
-        max-width: 320px;
+        width: 320px;
     } 
     .breadcrumb-section{
         display: none;
@@ -97,7 +97,11 @@ body{font-family: none;}
         width: 100%
     }
 }
-
+@media (max-width: 480px){
+    #study_travel .main {
+        width:100%;
+    }
+}
 h1, .h1, h2, .h2, h3, .h3 {
     margin-top: 20px;
     margin-bottom: 10px;

@@ -103,6 +103,7 @@
 }
 .content_bottom .bottom-content .desc{
     text-align: center;
+    font-size:16px;
 }
 .content_bottom .bottom-content .form_note{
     text-align: right;
@@ -120,14 +121,22 @@
 .form_content .content .form-group{
     margin-bottom: 25px;
 }
-.form_content .content .form-group:nth-child(1){
+.form_content .content:nth-child(1) .form-group:nth-child(1){
     margin-bottom: 8px;
+}
+.form_content .content:nth-child(2) {
+    text-align: right;
 }
 .form_content .content .form-group label{
     width: 153px;
     font-size: 18px;
     line-height: 25px;
-    text-transform: none
+    text-transform: none;
+    text-align: left;
+}
+.form_content .content:nth-child(2) label{
+    padding-left: 15px;
+    font-weight: bold;
 }
 .form_content .content .form-group input{
     height: 33px;
@@ -143,6 +152,61 @@
     background-color: #fff;
     padding: 0 10px;
 }
+.content .form-group .content_list{
+    width: 220px;
+    display: inline-block;
+}
+.content .form-group .content_list .select{
+    background: #fff;
+    height: 33px;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+    padding-top: 3px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.content .form-group .content_list .select i{
+    font-style: normal;
+}
+.content .form-group .content_list .select span{
+    background: url(../../img/image/chosen-sprite.png) no-repeat 0 2px;
+}
+.form_submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form_submit button{
+    position: relative;
+    z-index: 1;
+    width: 136px;
+    height: 136px;
+    font-size: 14px;
+    padding: 0 5px;
+    background: #ee2d42;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    border: 0;
+    font-weight: bold;
+    border-radius: 50%;
+    box-shadow: 0px 18px 25px 10px rgba(238, 45, 66, 0.48);
+    bottom: -15px;
+}
+.form_submit button:hover {
+    background:#eb5e6c;
+}
+.form_submit .sub_icon{
+    display: block;
+    margin: 35px auto 10px;
+    width: 18px;
+    height: 31px;
+    background:url("../../img/image/sprites_img.png") no-repeat;
+    background-position: -1202px -776px;
+}
+
+
 
 /*修改input placeholder*/
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */

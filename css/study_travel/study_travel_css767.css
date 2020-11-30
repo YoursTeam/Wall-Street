@@ -1,13 +1,4 @@
 @media (max-width: 767px){
-    /* #study_travel .main{
-        max-width: 320px;
-    } 
-    .breadcrumb-section{
-        display: none;
-    }
-    #study_travel .container{
-        width: 100%
-    } */
     #study_travel .aside_img {
         max-width: 149px;
         right: 0;

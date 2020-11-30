@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <title>联系我们</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/call_me/call_me.css">
@@ -113,27 +113,48 @@
                             </div>
                             <div class="content">
                                 <div class="form-group">
+                                    <label class="control-label " for="about.province">
+                                        省份 <span>*</span>
+                                    </label>
+                                    <div class="content_list">
+                                        <div class="select">
+                                            <i>- 请选择省份 -</i>
+                                            <span></span>
+                                        </div>
+                                        <!-- <div>
+                                            <ul>
+                                                <li></li>
+                                            </ul>
+                                            <div></div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                                <div class="form-group">
                                     <label class="control-label " for="about.email">
-                                        省份<span>*</span>
+                                        所在城市 <span>*</span>
                                     </label>
                                     <input id="about.email" name="eamil" placeholder="电子邮箱地址" type="text">
                                 </div>
                                 <div class="form-group">
                                     <label class="control-label " for="about.email">
-                                        电子邮箱地址<span>*</span>
+                                        选择类别 <span>*</span>
                                     </label>
                                     <input id="about.email" name="eamil" placeholder="电子邮箱地址" type="text">
                                 </div>
                             </div>
                         </div>
                         <div class="form_submit">
-
+                            <button type="submit">
+                                <span class="sub_icon"></span>
+                                发送
+                            </button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </main>
+    <footer style="height:500px">footer</footer>
 
 </body>
 
