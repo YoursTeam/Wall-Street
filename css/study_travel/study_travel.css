@@ -216,6 +216,7 @@
     border-top: 6px solid transparent;
     border-bottom: 6px solid transparent;
     border-color: inherit;
+    z-index:-1;
 }
 .learn-content-text .text-middle{
     font-weight: bold;

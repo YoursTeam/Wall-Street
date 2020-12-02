@@ -3,13 +3,33 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no"> -->
 	<title>学习之旅</title>
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/study_travel/study_travel.css">
 	<link rel="stylesheet" type="text/css" href="../css/study_travel/study_travel_css767.css">
 	<link rel="stylesheet" href="../css/common.css">
 	<script src="../js/jquery.js"></script>
+	<script>
+		var deviceRatio = window.outerWidth/1400;
+		if(navigator.userAgent.match(/iPad/i) != null){
+			document.write('<meta name="viewport" content="width=1400, user-scalable=0,maximum-scale=' + deviceRatio + ',minimum-scale=' + deviceRatio + ',initial-scale=' + deviceRatio + '"/>');
+		}else if(navigator.userAgent.match(/Android/i)
+				|| navigator.userAgent.match(/webOS/i)
+				|| navigator.userAgent.match(/iPhone/i)
+				||navigator.userAgent.match(/iPod/i)
+				|| navigator.userAgent.match(/BlackBerry/i)
+				|| navigator.userAgent.match(/Windows Phone/i)) {
+            if (window.outerWidth <= 767  ) {
+				deviceRatio = window.outerWidth/320;
+				document.write('<meta name="viewport" content="width=320, user-scalable=0,maximum-scale=' + deviceRatio + ',minimum-scale=' + deviceRatio + ',initial-scale=' + deviceRatio + '"/>');
+            } else {
+                document.write('<meta name="viewport" content="width=1400, user-scalable=0,maximum-scale=' + deviceRatio + ',minimum-scale=' + deviceRatio + ',initial-scale=' + deviceRatio + '"/>');
+            }
+		} else {
+            document.write('<meta name="viewport" content="width=1400, user-scalable=0,maximum-scale=' + deviceRatio + ',minimum-scale=' + deviceRatio + ',initial-scale=' + deviceRatio + '"/>');
+		}
+	</script>
 </head>
 
 <body>

@@ -33,6 +33,7 @@ $(function(){
             $nodeNum.removeClass("node")
         }else{
             $nodeNum.addClass("node")
+            
         }
     })
 })

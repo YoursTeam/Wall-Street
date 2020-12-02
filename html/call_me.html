@@ -7,10 +7,29 @@
     <title>联系我们</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/call_me/call_me.css">
+    <link rel="stylesheet" href="../css/call_me/call_me_767.css">
     <link rel="stylesheet" href="../css/common.css">
-
 </head>
-
+<script>
+    var deviceRatio = window.outerWidth/1400;
+    if(navigator.userAgent.match(/iPad/i) != null){
+        document.write('<meta name="viewport" content="width=1400, user-scalable=0,maximum-scale=' + deviceRatio + ',minimum-scale=' + deviceRatio + ',initial-scale=' + deviceRatio + '"/>');
+    }else if(navigator.userAgent.match(/Android/i)
+            || navigator.userAgent.match(/webOS/i)
+            || navigator.userAgent.match(/iPhone/i)
+            ||navigator.userAgent.match(/iPod/i)
+            || navigator.userAgent.match(/BlackBerry/i)
+            || navigator.userAgent.match(/Windows Phone/i)) {
+        if (window.outerWidth <= 767  ) {
+            deviceRatio = window.outerWidth/320;
+            document.write('<meta name="viewport" content="width=320, user-scalable=0,maximum-scale=' + deviceRatio + ',minimum-scale=' + deviceRatio + ',initial-scale=' + deviceRatio + '"/>');
+        } else {
+            document.write('<meta name="viewport" content="width=1400, user-scalable=0,maximum-scale=' + deviceRatio + ',minimum-scale=' + deviceRatio + ',initial-scale=' + deviceRatio + '"/>');
+        }
+    } else {
+        document.write('<meta name="viewport" content="width=1400, user-scalable=0,maximum-scale=' + deviceRatio + ',minimum-scale=' + deviceRatio + ',initial-scale=' + deviceRatio + '"/>');
+    }
+</script>
 <body>
     <main id="study_travel">
         <div class="main">
