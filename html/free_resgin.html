@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <title>免费体验</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/free_resgin/free_resgin.css">
+    <link rel="stylesheet" href="../css/free_resgin/free_resgin_767.css">
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+<script>
+    var deviceRatio = window.outerWidth / 1400;
+    if (navigator.userAgent.match(/iPad/i) != null) {
+        document.write('<meta name="viewport" content="width=1400, user-scalable=0,maximum-scale=' + deviceRatio + ',minimum-scale=' + deviceRatio + ',initial-scale=' + deviceRatio + '"/>');
+    } else if (navigator.userAgent.match(/Android/i)
+        || navigator.userAgent.match(/webOS/i)
+        || navigator.userAgent.match(/iPhone/i)
+        || navigator.userAgent.match(/iPod/i)
+        || navigator.userAgent.match(/BlackBerry/i)
+        || navigator.userAgent.match(/Windows Phone/i)) {
+        if (window.outerWidth <= 767) {
+            deviceRatio = window.outerWidth / 320;
+            document.write('<meta name="viewport" content="width=320, user-scalable=0,maximum-scale=' + deviceRatio + ',minimum-scale=' + deviceRatio + ',initial-scale=' + deviceRatio + '"/>');
+        } else {
+            document.write('<meta name="viewport" content="width=1400, user-scalable=0,maximum-scale=' + deviceRatio + ',minimum-scale=' + deviceRatio + ',initial-scale=' + deviceRatio + '"/>');
+        }
+    } else {
+        document.write('<meta name="viewport" content="width=1400, user-scalable=0,maximum-scale=' + deviceRatio + ',minimum-scale=' + deviceRatio + ',initial-scale=' + deviceRatio + '"/>');
+    }
+</script>
+
+<body>
+    <main id="study_travel" class="free_resgin">
+        <div class="main">
+            <div class="container">
+                <div class="clearFix">
+                    <div class="breadcrumb-section">
+                        <ol class="breadcrumb">
+                            <li><a href="#" title="">网站导览</a></li>
+                            <li class="active">免费体验</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="content_top">
+                    <div class="content_top_item">
+                        <h1>我们提供<br class="showBr" />两种免费<br class="showBr" />课程体验</h1>
+                        <p class="desc">我们提供两种课程体验。你可以试学我们功能强大的多媒体课件，或与我们的外教在线面对面上课。</p>
+                    </div>
+                    <img class="img1" src="../img/image/Free_Trial-1.png" alt="">
+                    <img class="img2" src="../img/image/Free_Trial-Mobile.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="content_bottom" class="main">
+            <div class="bg_freetrail">
+                <div class="container">
+                    <div class="circle left">
+                        <div class="bottom_content">
+                            <h3>多媒体课程试学</h3>
+                            <div class="des">在线课程全新升级， 7天免费学习，尽享英语学习的美丽。</div>
+                            <div class="content_more">
+                                <a href="#" title="现在就来试试吧">
+                                    <span class="icon trynow_icon">&nbsp;</span>现在就来试试吧
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="circle right">
+                        <div class="bottom_content">
+                            <h3>与我们的外教<br class="showBr">一对一在线上课</h3>
+                            <div class="des">免费参加外教在线课程</div>
+                            <div class="content_more">
+                                <a href="" onclick="return false;" title="联系我们"><span class="icon trynow_icon consult_icon">&nbsp;</span>联系我们</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer style="height: 500px;">footer</footer>
+</body>
+
+</html>
