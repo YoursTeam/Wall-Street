@@ -460,17 +460,20 @@
 	width: 100%;
 	height: 100%;
 	display: block;
-	padding-top: 20px;
-}
-.product-details-position a span{
+	padding-top: 38px;
 	color: #fff;
-	display: block;
 	text-align: center;
 }
-.img-desktop{
-	font-size: 31px;
+.product-details-position .img-span{
+	display: block;
+	background: url(../../img/qrf/sprites_img.png);
+	background-position: -1202px -776px;
+	width: 18px;
+	height: 31px;
+	margin: auto;
 }
 .img-text{
+	display: block;
 	font-size: 16px;
 	line-height: 20px;
 	margin-top: 12px;
@@ -798,11 +801,20 @@
 	.product-details-position a {
 	    padding-top: 18px;
 	}
+	.product-details-position .img-span{
+		background:url(../../img/qrf/glyphicon-more-mobile.png);
+		width: 12px;
+		height: 21px;
+		background-size: 100% auto;
+		background-position: 0 0;
+		background-repeat: no-repeat;
+	}
 	.product-details{
 		float: right;
 	}
 	.img-text {
 	    margin-top: 0px;
+		font-size: 14px;
 	}
 	.details-right{
 		float: left;

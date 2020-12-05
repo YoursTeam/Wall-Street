@@ -1,7 +1,6 @@
 footer{
-	margin-top: 100px;
 	background-color: #043458;
-	min-width: 1200px;
+	min-width: 1300px;
 }
 .wrapper_footer{
 	color: #fff;
@@ -121,8 +120,8 @@ footer{
     line-height: 24px;
 }
 .col-hotline_footer-box_img{
-	width: 100px;
-	height: 100px;
+	width: 80px;
+	height: 80px;
 	background-color: #FFFFFF;
 	padding: 10px;
 }
@@ -161,6 +160,9 @@ footer{
 	background-position: -1590px -583px;
 }
 .row .col-display1{
+	display: block;
+}
+.row .col-display2{
 	display: none;
 }
 
@@ -176,6 +178,9 @@ footer{
 	.wrapper_footer::before{
 		height: 15px;
 		top: -14px;
+	}
+	.row .col-display1{
+		display: none;
 	}
 	.row .col-display2{
 		display: block;
