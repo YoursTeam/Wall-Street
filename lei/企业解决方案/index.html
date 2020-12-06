@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="solution.css"/>
+		<title></title>
+	</head>
+	<body>
+		<div class="solution-box">
+			<div class="solu-box">
+				<div class="solu-img">
+					<div class="solu-title">
+						<span>首页</span><span>|</span>
+						<span>企业解决方案</span>
+					</div>
+					<img src="../img/solution/T27_01.png" alt="">
+				</div>
+				<h1>
+					企业解决<br/>方案
+				</h1>
+				<div class="solu-word">
+					在日益一体化的全球经济中,英语水平的高低对于大多数行<br/>业和企业来说至关重要。 华尔街英语战略培训解决方案将<br/>提高你的企业竞争力，提升你的全球化形象。
+				</div>
+			</div>
+			<div class="solu-talents">
+				<div class="talents-box"></div>
+				<h1>国际化人才的<br/>评估和选拔</h1>
+				<h2>我们将协助企业设置不同职位英语水平的要求和标准、提供<br/>第三方语言能力报告、协助选择合适的海外派遣人员和创建<br/>适合企业未来策略发展需要的人才库。
+				</h2>
+				<img src="../img/solution/T27_02.png" alt="">
+			</div>
+			<div class="talents-English">
+				<div>
+					<img src="../img/solution/T27_03.png" alt="">
+					<h1>英语培训</h1>
+					<p>华尔街英语提供广泛的线上线下企业语言培训方案选项。我<br/>们可以针对你的所在行业进行课程定制，以及满足员工或管<br/>理人员的具体需求。</p>
+				</div>
+				<div>
+					<img src="../img/solution/T27_04.png" alt="">
+					<h1>企业培训中心</h1>
+					<p>华尔街英语已在新兴产业园设立了一批企业培训中心。在这<br/>里我们可以根据你的企业和员工需求提供量身定制的课程。</p>
+				</div>
+				<div>
+					<img src="../img/solution/T27_05.png" alt="">
+					<h1>企业国际视野</h1>
+					<p>对于处于国际化早期阶段的公司和企业，华尔街英语将为员<br/>工提供英语培训，让他们提前为全球商业环境和跨文化体验<br/>做好准备。</p>
+				</div>
+				<div>
+					<img src="../img/solution/T27_06.png" alt="">
+					<h1>企业软技能发展</h1>
+					<p>我们提供商业软技能课程和培训，以帮助管理人员和员工发<br/>展自身软技能，如演讲技巧、谈判技巧、领导力和国际社交<br/>礼仪等。</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		(function() {
+			function resize() {
+				const designWidth = 1898;
+				const windowWidth = window.innerWidth;
+				const html = document.documentElement;
+				html.style.fontSize = (100 / designWidth * windowWidth) + 'px';
+			}
+			resize();
+			window.addEventListener('onorientationchange' in window ? 'orientationchange' : 'resize', resize);
+			window.addEventListener('DOMContentLoaded', resize);
+		})(document, window);
+	</script>
+</html>
