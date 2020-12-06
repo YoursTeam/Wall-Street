@@ -1,3 +1,10 @@
+$('.gyheiyy').load('../config/config.html', function (){
+    $(this).append(
+        $('<link/>', { rel:"stylesheet", href: '../../css/config/config.css'})
+    )
+})
+
+
 $('.selecticon').click(() => {
     $('.listshow').css({
         display: 'block'

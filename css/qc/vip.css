@@ -6,7 +6,6 @@
     font-size: 60px;
     color:#043458;
     font-weight: bold;
-   
 }
 .vip_top_box p{
     font-size: 16px;
@@ -65,7 +64,7 @@
     font-weight: bold;
     color: #043458;
 }
-.tap_two{
+.from_box.tag{
     display: none;
 }
 .from_box .ipt_box{
@@ -77,8 +76,9 @@
 .from_box .ipt_box input{
     border: none;
 }
-.from_box .ipt_box input{
+.from_box .ipt_box input:focus{
     border: none;
+    outline:none;
 }
 .tap_box .btn{
     width: 136px;
