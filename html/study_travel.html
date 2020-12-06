@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>学习之旅</title>
+	<link rel="stylesheet" href="../css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/study_travel/study_travel.css">
 	<link rel="stylesheet" type="text/css" href="../css/study_travel/study_travel_css767.css">
@@ -32,6 +33,7 @@
 </head>
 
 <body>
+	<header style="position:absolute;z-index:999999;"></header>
 	<main id="study_travel">
 		<div class="main">
 			<div class="container">
@@ -196,9 +198,14 @@
 			</div>
 		</div>
 	</main>
-	<footer style="height: 500px;">footer</footer>
+	<div class="footer"></div>
 </body>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/study_travel_index.js"></script>
-
+<script>
+	$(function(){
+		$('header').load('header.html');
+		$('.footer').load('footer.html');
+	})
+</script>
 </html>
