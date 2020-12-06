@@ -492,6 +492,9 @@
 		max-width: 320px;
 		overflow: visible;
 	}
+	.main_position{
+		display: none;
+	}
 	/* 1 */
 	.persona__story{
 		padding-top: 18px;
@@ -620,7 +623,7 @@
 		margin-top: 61px;
 		font-size: 12px;
 		line-height: 18px;
-		left: 50%;
+		left: 45%;
 	}
 	.persona__comment__left{
 		width: 342px;
