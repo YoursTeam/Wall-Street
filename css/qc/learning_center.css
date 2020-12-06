@@ -1,0 +1,185 @@
+.container{
+    margin-top: 110px;
+    width: 85%;
+}
+.datail{
+    margin-top: 30px ;
+}
+.datail_navigation{
+    display: flex;
+    line-height: 25px;
+    font-size: 16px;
+}
+.datail_navigation>li:nth-child(even){
+    border-left:1px solid black;
+    margin:0 20px;
+}
+.datail_navigation .navigation_three{
+    color:red;
+    font-weight: 700;
+}
+.datail_conent{
+    margin: 0 80px;
+}
+.learning_center_title{
+    color:red;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 55px;
+    width: 120%;
+}
+.datail_select{
+    margin-top:50px;
+    display: flex;
+    justify-content: start;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+}
+
+.datail_select .checkouton{
+    border-bottom: 2px solid steelblue;
+    line-height: 30px;
+    width: 50%;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.datail_select .selecticon{
+    width: 20px;
+    display: block;
+}
+.datail_select .listshow{
+    position: absolute;
+    top:35px;
+    left:40px;
+    width: 50%;
+    display: none;
+}
+.datail_select .listshow ul{
+    box-shadow: 10px 10px 5px #888888;
+}
+.datail_select .listshow li{
+    padding: 5px 20px;
+    font-size: 16px;
+    background: white;
+}
+.datail_select .listshow li:hover{
+    background: #043458;
+    color: white;
+}
+.datail_select .listshow li.active{
+    background: #043458;
+}
+.datail_conent .hint{
+    margin-top: 20px;
+    color:#aaa;
+}
+.datail_conent .datail_content_title{
+    font-size: 18px;
+    color:red;
+    font-weight: bold;
+    margin-top: 50px;
+}
+.datail_conent .datail_content_a_box{
+    margin: 15px 0;
+    color: #043458;
+}
+.datail_conent .datail_content_a_box:hover a{
+    color: #0082a9;
+    text-decoration:none;
+}
+
+.datail_conent .particulars_box>div{
+    display: flex;
+}
+.datail_conent .particulars_box .particulars_box_icon{
+    width: 40px;
+    height: 40px;
+}
+.datail_conent .particulars_box .particulars_box_text{   
+    padding: 10px 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.border_bottom{
+    border-bottom:1px solid #ccc;
+    margin-top: 15px;
+}
+.datail_conent .particulars_box .particulars_box_text h2{
+    color: #023359;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.datail_conent .particulars_box .particulars_box_text div{
+    color:#666;
+}
+.datail_conent .particulars_box .particulars_box_text div span{
+    color:#023359;
+    font-size: 14px;
+}
+.datail_conent .particulars_box_footer {
+    font-size: 16px;
+    font-weight: bold;
+    color:#666;
+}
+.datail_conent .particulars_box_footer ul{
+    list-style: disc;
+    margin-left: 20px;
+}
+.brief .brief_text{
+    color: #666;
+    font-size: 16px;
+    height: 220px;
+    overflow: hidden;
+    margin-top: 70px;
+}
+.remark{
+    text-align: end; 
+    font-size: 16px;
+}
+.remark a{
+    padding: 5px 0;
+    border-bottom: 2px solid #043458;
+}
+.remark span{
+    display: inline-block;
+    width: 40px;
+    color:#043458;
+}
+.map{
+    width: 100%;
+    height: 600px;
+    background: #043458;
+    margin-top: 50px;
+}
+.ason-map-div_box{
+    overflow-y: scroll;
+    height: 300px;
+}
+.ason-map-div_box::-webkit-scrollbar {
+    display: none;
+  }
+.ason-map-div{
+    font-size: 14px;
+    height: 350px;
+    color:#ccc;
+}
+.ason-map-div strong{
+    color:red;
+}
+.ason-map-div .col{
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+.ason-map-div .col:nth-last-child(){
+    border:0px;
+}
+.ason-map-div .col b{
+    color:#043458;
+    font-size: 16px;
+}
+.BMap_Marker {
+    border: 1px solid red;
+    background-size: cover;
+}

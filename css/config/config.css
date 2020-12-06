@@ -1,0 +1,349 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/* 包含以下五种的链接 */
+a {
+	text-decoration: none;
+}
+/*正常的未被访问过的链接*/
+a:link {
+	text-decoration: none;
+}
+/*已经访问过的链接*/
+a:visited {
+	text-decoration: none;
+}
+/*鼠标划过(停留)的链接*/
+a:hover {
+	text-decoration: none;
+}
+/* 正在点击的链接，鼠标在元素上按下还没有松开*/
+a:active {
+	text-decoration: none;
+	color: black;
+}
+/* 获得焦点的时候 鼠标松开时显示的颜色*/
+a:focus {
+	text-decoration: none;
+	color: black;
+}
+.stairNavigationOne{
+	width: 100vw;
+	min-width: 1100px;
+	height: 40px;
+	background: #F2F1F1;
+	display: flex;
+	align-items: center;
+	padding: 0 80px;
+}
+.stairNavigation_flex{
+	display: flex;
+}
+.stairNavigation_flex_left{
+	width: 45%;
+	height: 100%;
+}
+.stairNavigation_flex_left li{
+	padding: 10px 15px;
+	display: flex;
+	align-items: center;
+}
+.stairNavigation_flex_left li.active{
+	font-weight: 600;
+	background: white;
+}
+.stairNavigation_flex_left li:hover{
+	background: white;
+}
+.stairNavigation_flex_center{
+	width: 45%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 600;
+}
+.stairNavigation_flex_center>li{
+	height: 40px;
+	display: flex;
+	align-items: center;
+}
+.stairNavigation_flex_center>li.actives{
+	background: #043458;
+}
+.stairNavigation_flex_center>li.actives>a{
+	color: white;
+}
+.stairNavigation_flex_center>li:hover a{
+	color: white;
+}
+.stairNavigation_flex_center>li:hover span{
+	color: white;
+}
+.stairNavigation_flex_center>li:hover{
+	background: #043458;
+}
+.stairNavigation_flex_right{
+	width: 10%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 600;
+}
+.stairNavigationTwo{
+	display: none;
+}
+/* 二级导航 */
+.secondNavigation{
+	width: 100%;
+	height: 75px;
+	background: white;
+}
+.secondNavigationMax{
+	width: 85%;
+	height: 100%;
+	display: flex;
+	margin: 0 auto;
+	min-width: 938px;
+}
+.maxListImg{
+	width: 75px;
+	height: 100%;
+	padding: 10px 0;
+	text-align: right;
+}
+.maxListImg img{
+	width: 75px;
+	height: 100%;
+}
+.maxListUl{
+	display: flex;
+	height: 100%;
+	align-items: center;
+	margin-left: 10px;
+}
+.secondNavigationMax>div{
+	color: black;
+	font-size: 15px;
+	font-weight: bold;
+}
+.maxListUl>.listUlItem span:hover{
+	cursor: pointer;
+}
+.maxListUl>div a{
+	border-right:1px solid black;
+	padding: 0 10px;
+	text-align: center;
+}
+.listUlItem{
+	padding: 0 10px;
+}
+.maxListUl>.lastChild>a{
+	color: #EE2D42;
+	border: 0;
+}
+.listUlItemOne,.listUlItemTwo{
+	position: relative;
+}	
+.listUlItemOne_xiala,.listUlItemTwo_xiala{
+	width: 100%;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	background: white;
+	padding-left: 10px;
+	box-shadow: 3px 3px 3px white;
+}
+.listUlItemOne_xiala>div,.listUlItemTwo_xiala>div{
+	width: 100%;
+	height: 55px;
+}
+.listUlItemOne_xiala>div>a,.listUlItemTwo_xiala>div>a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+.listUlItemOne_xiala>div>a:hover{
+	background: #0082A9;
+	color: white;
+	font-weight: bold;
+}
+.listUlItemTwo_xiala>div>a:hover{
+	background: #0082A9;
+	color: white;
+	font-weight: bold;
+}
+.listUlItemOne_xiala>div>a,.listUlItemTwo_xiala>div>a{
+	border: 0;
+}
+.secondNavigationMin{
+	display: none;
+}
+
+@media screen and (max-width: 760px) {
+	body{
+		width: 100%;
+		overflow-x: hidden;
+	}
+	/* 包含以下五种的链接 */
+a {
+	text-decoration: none;
+}
+/*正常的未被访问过的链接*/
+a:link {
+	text-decoration: none;
+}
+/*已经访问过的链接*/
+a:visited {
+	text-decoration: none;
+}
+/*鼠标划过(停留)的链接*/
+a:hover {
+	text-decoration: none;
+	color: white;
+}
+/* 正在点击的链接，鼠标在元素上按下还没有松开*/
+a:active {
+	text-decoration: none;
+}
+/* 获得焦点的时候 鼠标松开时显示的颜色*/
+a:focus {
+	text-decoration: none;
+	color: white;
+}
+	.stairNavigationOne{
+		display: none;
+	}
+	.stairNavigationTwo{
+		display: block;
+		width: 100%;
+		height: 60px;
+		display: flex;
+	}
+	.stairNavigationTwo>.imageBox{
+		width: 80%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		padding: 0 20px;
+	}
+	.stairNavigationTwo>.contentBox{
+		width: 20%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background: white;
+	}
+	.stairNavigationTwo>.imageBox>img{
+		width: 80px;
+		height: 50px;
+	}
+	.stairNavigationTwo>.contentBox>span:nth-child(1){
+		color: #EE2D42;
+		font-weight: bold;
+	}
+	.stairNavigationTwo>.contentBox>span:last-child{
+		color: white;
+		width: 50px;
+		height: 60px;
+		background: #043458;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: bold;
+	}
+	.stairNavigationTwo>.contentBox>img{
+		width: 17px;
+		height: 17px;
+	}
+	/* 二级导航 */
+	.secondNavigationMax{
+		display: none;
+	}
+	.secondNavigationMin{
+		width: 100%;
+		background: #043458;
+		color: white;
+		font-weight: bold;
+		display: block;
+		transform: translateX(100%);
+		transition: all .5s;
+		/* position: null; */
+	}
+	.secondNavigationMin_topBtn{
+		width: 100%;
+		height: 55px;
+		background: #F2F1F1;
+		display: flex;
+		align-items: center;
+		color: #305774;
+		position: relative;
+	}
+	.secondNavigationMin_topBtn>div{
+		height: 100%;
+		padding: 0 15px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.secondNavigationMin_topBtn>img{
+		display: block;
+		width: 22px;
+		height: 22px;
+		position: absolute;
+		right: 10px;
+	}
+	.topBtn_active{
+		background:#043458;
+		color: white;
+	}
+	.secondNavigationMin_content>div{
+		width: 100%;
+		text-indent: 40px;
+		padding: 10px 0;
+	}
+	.secondNavigationMin_content_btnOne_content{
+		height: 0;
+		background: #0082A9;
+		transform: translateY(20px);
+		transition: all .5s;
+		overflow: hidden;
+	}
+	.secondNavigationMin_content_btnTow_content{
+		height: 0;
+		background: #0082A9;
+		transition: all .5s;
+		overflow: hidden;
+		transform: translateY(20px);
+	}
+	.secondNavigationMin_content_btnOne_content>div{
+		padding: 10px 0;
+	}
+	.secondNavigationMin_content_btnTow_content>div{
+		padding: 10px 0;
+	}
+	.secondNavigationMin_content>div:nth-last-child(1){
+		color: #A6B8C5;
+	}
+	.secondNavigationMin_content>div:nth-last-child(2){
+		color: #A6B8C5;
+	}
+	.secondNavigationMin_content>div:nth-last-child(3){
+		color: #EE2D42;
+	}
+	.secondNavigationMin_content>div>p{
+		width: 100%;
+		display: flex;
+		align-items: center;
+	}
+	.secondNavigationMin_content>div>p>a{
+		display: inline-block;
+		width: 80%;
+	}
+
+}
