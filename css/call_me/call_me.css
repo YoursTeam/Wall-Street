@@ -152,7 +152,7 @@
     background-color: #fff;
     padding: 0 10px;
 }
-.content .form-group .content_list{
+/* .content .form-group .content_list{
     width: 220px;
     display: inline-block;
 }
@@ -171,7 +171,7 @@
 }
 .content .form-group .content_list .select span{
     background: url(../../img/image/chosen-sprite.png) no-repeat 0 2px;
-}
+} */
 .form_submit{
     display: flex;
     justify-content: center;

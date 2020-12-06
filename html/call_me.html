@@ -9,19 +9,22 @@
     <link rel="stylesheet" href="../css/call_me/call_me.css">
     <link rel="stylesheet" href="../css/call_me/call_me_767.css">
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/select_box.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/select_box.js"></script>
 </head>
 <script>
-    var deviceRatio = window.outerWidth/1400;
-    if(navigator.userAgent.match(/iPad/i) != null){
+    var deviceRatio = window.outerWidth / 1400;
+    if (navigator.userAgent.match(/iPad/i) != null) {
         document.write('<meta name="viewport" content="width=1400, user-scalable=0,maximum-scale=' + deviceRatio + ',minimum-scale=' + deviceRatio + ',initial-scale=' + deviceRatio + '"/>');
-    }else if(navigator.userAgent.match(/Android/i)
-            || navigator.userAgent.match(/webOS/i)
-            || navigator.userAgent.match(/iPhone/i)
-            ||navigator.userAgent.match(/iPod/i)
-            || navigator.userAgent.match(/BlackBerry/i)
-            || navigator.userAgent.match(/Windows Phone/i)) {
-        if (window.outerWidth <= 767  ) {
-            deviceRatio = window.outerWidth/320;
+    } else if (navigator.userAgent.match(/Android/i)
+        || navigator.userAgent.match(/webOS/i)
+        || navigator.userAgent.match(/iPhone/i)
+        || navigator.userAgent.match(/iPod/i)
+        || navigator.userAgent.match(/BlackBerry/i)
+        || navigator.userAgent.match(/Windows Phone/i)) {
+        if (window.outerWidth <= 767) {
+            deviceRatio = window.outerWidth / 320;
             document.write('<meta name="viewport" content="width=320, user-scalable=0,maximum-scale=' + deviceRatio + ',minimum-scale=' + deviceRatio + ',initial-scale=' + deviceRatio + '"/>');
         } else {
             document.write('<meta name="viewport" content="width=1400, user-scalable=0,maximum-scale=' + deviceRatio + ',minimum-scale=' + deviceRatio + ',initial-scale=' + deviceRatio + '"/>');
@@ -30,6 +33,7 @@
         document.write('<meta name="viewport" content="width=1400, user-scalable=0,maximum-scale=' + deviceRatio + ',minimum-scale=' + deviceRatio + ',initial-scale=' + deviceRatio + '"/>');
     }
 </script>
+
 <body>
     <main id="study_travel">
         <div class="main">
@@ -135,30 +139,52 @@
                                     <label class="control-label " for="about.province">
                                         省份 <span>*</span>
                                     </label>
-                                    <div class="content_list">
+                                    <!-- <div class="content_list">
                                         <div class="select">
                                             <i>- 请选择省份 -</i>
                                             <span></span>
                                         </div>
-                                        <!-- <div>
+                                        <div>
                                             <ul>
                                                 <li></li>
                                             </ul>
                                             <div></div>
-                                        </div> -->
+                                        </div>
+                                    </div> -->
+                                    <div class="chosen-container previous">
+                                        <div class="chosen-single">
+                                            <span>
+                                                <i>- 请选择省份 -</i>
+                                            </span>
+                                            <b></b>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="control-label " for="about.email">
                                         所在城市 <span>*</span>
                                     </label>
-                                    <input id="about.email" name="eamil" placeholder="电子邮箱地址" type="text">
+                                    <div class="chosen-container city">
+                                        <div class="chosen-single">
+                                            <span>
+                                                <i>- 请选择城市 -</i>
+                                            </span>
+                                            <b></b>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="control-label " for="about.email">
+                                    <label class="control-label " for="about.category">
                                         选择类别 <span>*</span>
                                     </label>
-                                    <input id="about.email" name="eamil" placeholder="电子邮箱地址" type="text">
+                                    <div class="chosen-container category">
+                                        <div class="chosen-single">
+                                            <span>
+                                                <i>- 请选择类别 -</i>
+                                            </span>
+                                            <b></b>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -176,5 +202,48 @@
     <footer style="height:500px">footer</footer>
 
 </body>
+<script>
+    $(function () {
+        let cityData = [];
+        let previous = [{"code":"CN-31","name":"上海市"},{"code":"CN-44","name":"广东省"},{"code":"CN-11","name":"北京市"},{"code":"CN-32","name":"江苏省"},{"code":"CN-12","name":"天津市"},{"code":"CN-33","name":"浙江省"},{"code":"CN-37","name":"山东省"},{"code":"CN-34","name":"安徽省"},{"code":"CN-50","name":"重庆市"},{"code":"CN-35","name":"福建省"},{"code":"CN-62","name":"甘肃省"},{"code":"CN-45","name":"广西壮族自治区"},{"code":"CN-52","name":"贵州省"},{"code":"CN-46","name":"海南省"},{"code":"CN-13","name":"河北省"},{"code":"CN-23","name":"黑龙江省"},{"code":"CN-41","name":"河南省"},{"code":"CN-42","name":"湖北省"},{"code":"CN-43","name":"湖南省"},{"code":"CN-36","name":"江西省"},{"code":"CN-22","name":"吉林省"},{"code":"CN-21","name":"辽宁省"},{"code":"CN-15","name":"内蒙古自治区"},{"code":"CN-64","name":"宁夏回族自治区"},{"code":"CN-63","name":"青海省"},{"code":"CN-61","name":"陕西省"},{"code":"CN-14","name":"山西省"},{"code":"CN-51","name":"四川省"},{"code":"CN-65","name":"新疆维吾尔自治区"},{"code":"CN-54","name":"西藏自治区"},{"code":"CN-53","name":"云南省"}]
+        let category = [{"code":"0","name":"职业生涯"},{"code":"1","name":"为管理人员量身定制的课程"},{"code":"2","name":"了解华尔街英语课程项目"},{"code":"3","name":"企业解决方案"}]
+        $(".chosen-container.previous").selectBox(previous,0)
+        $(".chosen-container.category").selectBox(category,2)
+        $(".chosen-container .chosen-single").click(function(e){
+            $(".chosen-container.city").removeClass("active");
+            $(".chosen-container.category").removeClass("active");
+            $(this).parent().toggleClass("active");
+        })
+        $(".chosen-container.previous .mCSB_container").click(async (e)=>{
+            $(".chosen-container.city").find(".chosen-drop").remove();
+            $(".chosen-container.city .chosen-single i").text("-请选择城市-")
+            let key = $(e.target).attr("code");
+            cityData = await getData("http://localhost:3000/region/" + key)
+        })
+
+        $(".chosen-container.city .chosen-single").on("click",function(){
+            if($(this).parent().has("active")){
+                $(this).parent().find(".chosen-drop").remove();
+            }
+            $(this).parent().selectBox(cityData,1)
+        })
+
+        function getData(url){
+            return new Promise((reslove,reject)=>{
+                $.ajax({
+                    url,method:"get",
+                    dataType:"JSON",
+                    success:(res)=>{
+                        reslove(res)
+                    },
+                    fail(){
+                        reject([])
+                    }
+                })
+            })
+        }
+        
+    })
+</script>
 
 </html>
