@@ -18,6 +18,7 @@ ul{list-style:none;padding:0;margin: 0;}
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding-left: 10px;
 }
 .chosen-container .chosen-single span{
     display: block;
@@ -71,6 +72,10 @@ ul{list-style:none;padding:0;margin: 0;}
     background: #0082a9;
     color: #ffffff;
 }
+.mCSB_container li.active{
+    background: #0082a9;
+    color: #ffffff;
+}
 .scroll_groove{
     position: absolute;
     width: 16px;
@@ -86,7 +91,7 @@ ul{list-style:none;padding:0;margin: 0;}
     width: 8px;
     left: 50%;
     transform: translate(-50%);
-    min-height: 30px;
+    /* min-height: 30px; */
     display: block;
     max-height: 230px;
     border-radius: 16px;

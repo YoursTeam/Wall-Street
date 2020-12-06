@@ -163,6 +163,29 @@
         margin-top: 0;
        
     }
+    .chosen-container{
+        width: 260px;
+    }
+    .chosen-container .chosen-single{
+        width: 100%;
+        font-size: 18px;
+        line-height: 28px;
+        height: 30px;
+        padding-top: 1px;
+    }
+    .chosen-container .chosen-single span{
+        font-size: 12px;
+        line-height: 28px;
+    }
+    #mCSB_2{
+        max-height: 140px;
+    }
+    .mCSB_container li{
+        font-size: 12px;
+        line-height: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     .form_submit button{
         font-size: 12px;
         width: 80px;
