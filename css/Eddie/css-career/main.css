@@ -1,0 +1,434 @@
+main {
+  font-size: 16px;
+  margin-bottom: 100px;
+  position: relative;
+}
+main nav {
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+}
+main nav div {
+  padding: 15px 20px !important;
+  margin-top: 17px;
+  line-height: 24px;
+  margin-left: 5px;
+}
+main nav a {
+  color: #333333;
+  border-right: 1px solid #333333;
+  padding-right: 0.1rem;
+  text-transform: capitalize;
+}
+main nav a:hover {
+  color: #0082a9;
+}
+main nav span {
+  color: #ee2d42;
+  font-weight: bold;
+  padding-left: 10px;
+}
+/* 职业生涯开始 */
+main .main-career {
+  position: relative;
+  overflow: hidden;
+  padding: 0 25px 100px;
+}
+main .main-career::before {
+  margin-left: -790px;
+  width: 1000px;
+  height: 1000px;
+  border: 2px solid #043458;
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+}
+main .main-career::after {
+  right: -650px;
+  top: -600px;
+  width: 1000px;
+  height: 1000px;
+  border: 2px solid #043458;
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+}
+main .main-career .col{
+  text-align: center;
+  padding: 0 30px;
+  position: relative;
+  float: left;
+}
+main .container strong {
+  font-size: 40px;
+  color: #ee2d42;
+  display: block;
+}
+main .main-career strong{
+  padding: 50px 0 80px 60px;
+}
+.xl-33{
+  width: 33.333333%;
+}
+main .main-career .ovf b {
+  background: #fff;
+  padding: 30px 0;
+  display: block;
+  font-size: 24px;
+  color: #043458;
+}
+main .main-career .ovf a {
+  box-shadow: 0px 18px 25px 10px rgba(238, 45, 66, 0.48);
+  position: relative;
+  line-height: 20px;
+  font-weight: bold;
+  padding-top: 60px;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display: inline-block;
+  background: url(../../../img/Eddie/image-career/ason-hr-more.png) center 20px no-repeat #EE2D42;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+main .main-career .ovf a::before {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 120px;
+  height: 120px;
+  border: 1px solid rgba(238, 45, 66, 0.15);
+  animation: sonar 2.5s infinite 2.5s;
+}
+main .main-career .ovf a::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 120px;
+  height: 120px;
+  border: 1px solid rgba(238, 45, 66, 0.15);
+  animation: sonar 2.5s infinite 1s;
+}
+@keyframes sonar {
+  0%{ transform: scale(1); opacity: 0; }
+  45%{ transform: scale(1.5); opacity: 1; }
+  50%{ transform: scale(1.5); opacity: 1; }
+  100%{ transform: scale(2); opacity: 0; }
+}
+/* 职业生涯结束 */
+/* 我们的团队开始 */
+  /* 视频开始 */
+main .container .main-team {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+}
+main .main-team .team-slider {
+  position: relative;
+  width: 1000px;
+  height: 320px;
+}
+main .main-team strong {
+  padding: 10px 0 60px 0;
+}
+main .main-team .team-slider > p {
+  height: 100%;
+  width: 45px;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  z-index: 25;
+}
+main .main-team .prev {
+  background: url(../../../img/Eddie/image-career/ason-hr-left.png) no-repeat left center;
+  left: -80px;
+}
+main .main-team .next {
+  background: url(../../../img/Eddie/image-career/ason-hr-right.png) no-repeat left center;
+  right: -80px;
+}
+main .main-team .slider-list {
+  overflow: hidden;
+  position: relative;
+  width: 1000px;
+  height: 100%;
+}
+main .main-team .team-video {
+  margin: 0 auto;
+  margin: 40px auto 0;
+  position: absolute;
+  height: 100%;
+}
+main .main-team .team-video li {
+  width: 1000px;
+  height: 100%;
+  font-size: 16px;
+  float: left;
+}
+main .main-team .team-video .txt {
+  float: right;
+  width: 400px;
+  text-align: right;
+  margin-right: 20px;
+}
+main .main-team .team-video .txt b {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #043458;
+}
+main .main-team .team-video .txt p {
+  color: #666;
+  margin-bottom: 20px;
+}
+main .main-team .team-video .txt a {
+  box-shadow: 0px 5px 10px 5px rgba(238, 45, 66, 0.48);
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50px;
+  width: auto;
+  padding: 0 60px;
+  background: #EE2D42;
+  color: #fff;
+}
+main .main-team .team-video .img {
+  position: relative;
+  float: left;
+}
+main .main-team .team-video .img img {
+  z-index: 1;
+  position: absolute;
+} 
+main .main-team .team-video .img video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 495px;
+  height: 280px;
+  outline: 0;
+}
+  /* 视频结束 */
+  /* 面试开始 */
+main .team-community {
+  margin-top: 90px;
+}
+.team-community .bg {
+  background: url(../../../img/Eddie/image-career/ason-hr-community-bg.jpg) no-repeat top center;
+  height: 606px;
+  position: relative;
+  min-width: 1181px;
+}
+.team-community .cont {
+  width: 1000px;
+  position: relative;
+  margin: 0 auto;
+}
+.team-community .community-txt {
+  float: right;
+  width: 600px;
+}
+.team-community .community-txt .tle {
+  padding: 40px 0;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: bold;
+}
+.team-community .community-txt .tips {
+  padding: 50px 30px;
+  height: 460px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: auto;
+}
+.team-community .community-txt .tips .tips-tle {
+  font-size: 22px;
+  color: #043458;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.team-community .community-txt .tips .col {
+  margin-bottom: 50px;
+}
+.team-community .community-txt .tips .col p {
+  color: #575757;
+  line-height: 22px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+  /* 面试结束 */
+  /* 旅程开始 */
+.journey {
+  width: 100%;
+}
+.journey .tle {
+  font-weight: bold;
+  font-size: 28px;
+  color: #043458;
+  padding: 50px 0 ;
+}
+.journey .time {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 30px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  position: relative;
+}
+.journey .time .time-slider {
+  position: relative;
+  padding-bottom: 80px;
+}
+.journey .time .ts-list {
+  position: relative;
+}
+.journey .time .ts-list ul {
+  position: relative;
+}
+.journey .time .ts-list li {
+  position: relative;
+  float: left;
+  width: 1000px;
+  height: 320px;
+}
+.journey .time .ts-list li strong {
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 42px;
+}
+.journey .time .ts-list .ct {
+  width: 855px;
+  display: flex;
+  margin-left: 20px;
+  justify-content: space-around; 
+}
+.journey .time .ts-list .ct div {
+  vertical-align: bottom;
+  position: relative;
+}
+.journey .time .ts-list .ct div .tt {
+  margin-left: 50px;
+  margin-top: -8px;
+}
+.journey .time .ts-list .ct div .tt b {
+  font-size: 16px;
+  width: 150px;
+  display: block;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.journey .time .ts-list .ct div .tt span {
+  height: 140px;
+  overflow: hidden;
+  font-size: 13px;
+  color: #666666;
+  line-height: 24px;
+  display: block;
+  width: 120px;
+}
+.journey .time .ts-list .ct div i {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+  line-height: 64px;
+  text-align: center;
+  font-size: initial;
+  font-style: normal;
+}
+.journey .time .ts-list .t0 {
+  width: 64px;
+  height: 196px;
+  margin-top: 51px;
+  background: url(../../../img/Eddie/image-career/ason-hr-t01.png) no-repeat;
+}
+.journey .time .ts-list .t0 b {
+  color: #043458;
+}
+.journey .time .ts-list .t1 {
+  width: 64px;
+  height: 247px;
+  background: url(../../../img/Eddie/image-career/ason-hr-t02.png) no-repeat;
+}
+.journey .time .ts-list .t1 b {
+  color: #64cfe9;
+}
+.journey .time .ts-list .t2 {
+  width: 64px;
+  margin-top: 51px;
+  height: 196px;
+  background: url(../../../img/Eddie/image-career/ason-hr-t03.png) no-repeat;
+}
+.journey .time .ts-list .t2 b {
+  color: #ee2d42;
+}
+.journey .time .ts-list .t3 {
+  width: 64px;
+  height: 247px;
+  background: url(../../../img/Eddie/image-career/ason-hr-t04.png) no-repeat;
+}
+.journey .time .ts-list .t3 b {
+  color: #043458;
+}
+.journey .time .ts-list .d {
+  display: flex;
+  width: 855px;
+  margin-left: 20px;
+  margin-top: -40px;
+  justify-content: space-between;
+  position: relative;
+}
+.journey .time .ts-list .d::after{
+  content: "";
+  display: block;
+  position: absolute;
+  border-bottom: 2px solid #f1f1f1;
+  width: 850px;
+  bottom: 11px;
+  z-index: -1;
+}
+.journey .time .ts-list .d em {
+  z-index: 11;
+  border-radius: 50%;
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  border: 3px solid #ccc;
+  display: inline-block;
+}
+.journey .time-slider>p {
+  position: absolute;
+  bottom: 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+.journey .time-slider .prev {
+  left: 460px;
+  background: url(../../../img/Eddie/image-career/ason-hr-time-left.png) no-repeat center;
+}
+.journey .time-slider .next {
+  right: 460px;
+  background: url(../../../img/Eddie/image-career/ason-hr-time-right.png) no-repeat center;
+}
+
+  /* 旅程结束 */
