@@ -12,6 +12,7 @@
 		</script>
 	</head>
 	<body>
+		<div class="top-box" style="z-index: 999999;"></div>
 		<!-- 学习之旅开始 -->
 		<div id="head-page"></div>
 		<div class="container learning-public">
@@ -71,6 +72,7 @@
 		</div>
 		<!-- 新闻列表结束 -->
 		<script>
+			$('.top-box').load('header.html');
 			$.ajax({
 				url:'../../js/tnnData/newsList.json',
 				type:'get',

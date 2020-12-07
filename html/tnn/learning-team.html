@@ -6,14 +6,13 @@
 		<link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
 		<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="../../css/tnnCss/learning-team.css"/>
-		<!-- <link rel="stylesheet" type="" href="./public-learningHead.html" id='page1'/> -->
-		</object>
 		<script type="text/javascript" src="../../js/jquery-3.3.1/jquery-3.3.1.js"></script>
-		<script src="./bootstrap-3.3.7-dist/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript" src="../../js/jquery.i18n.min.js"></script>
+	<!-- 	<script src="../../js/config/config.js"></script> -->
 	</head>
 	<body>
-		<div class="mian-content">
+		<div class="top-box" style="z-index: 999999;"></div>
+		<div class="mian-content" style="">
 			<!-- 学习之旅开始 -->
 			<div id="head-page"></div>
 			<div class="container learning-public">
@@ -151,12 +150,15 @@
 		</script>
 	</body>
 	<script>
-		// $.ajax({
-		// 	url:'http://locahost:8081/learning',
-		// 	type:'get',
-		// 	success:function(data){
-		// 		console.log(data);
-		// 	}
+		$('.top-box').load('header.html');
+		// $('.top-box').load('../config/config.html', function (){
+		// 	console.log($(this));
+		//     $(this).append(
+		//         $('<link/>', { rel:"stylesheet", href: '../../css/config/config.css'})
+		//     )
+		// 	$(this).append(
+		// 		$('<script/>', { src: '../../js/config/config.js'})
+		// 	)
 		// })
 		$(document).ready(function(){
 			/*默认语言*/

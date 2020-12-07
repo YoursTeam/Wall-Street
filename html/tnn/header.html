@@ -1,0 +1,629 @@
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	/* 包含以下五种的链接 */
+	a {
+		text-decoration: none;
+	}
+
+	/*正常的未被访问过的链接*/
+	a:link {
+		text-decoration: none;
+	}
+
+	/*已经访问过的链接*/
+	a:visited {
+		text-decoration: none;
+	}
+
+	/*鼠标划过(停留)的链接*/
+	a:hover {
+		text-decoration: none;
+	}
+
+	/* 正在点击的链接，鼠标在元素上按下还没有松开*/
+	a:active {
+		text-decoration: none;
+		color: black;
+	}
+
+	/* 获得焦点的时候 鼠标松开时显示的颜色*/
+	a:focus {
+		text-decoration: none;
+		color: black;
+	}
+
+	.stairNavigationOne {
+		width: 100vw;
+		min-width: 1100px;
+		height: 40px;
+		background: #F2F1F1;
+		display: flex;
+		align-items: center;
+		padding: 0 80px;
+	}
+
+	.stairNavigation_flex {
+		display: flex;
+	}
+
+	.stairNavigation_flex_left {
+		width: 45%;
+		height: 100%;
+	}
+
+	.stairNavigation_flex_left li {
+		padding: 10px 15px;
+		display: flex;
+		align-items: center;
+	}
+
+	.stairNavigation_flex_left li.active {
+		font-weight: 600;
+		background: white;
+	}
+
+	.stairNavigation_flex_left li:hover {
+		background: white;
+	}
+
+	.stairNavigation_flex_center {
+		width: 45%;
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-weight: 600;
+	}
+
+	.stairNavigation_flex_center>li {
+		height: 40px;
+		display: flex;
+		align-items: center;
+	}
+
+	.stairNavigation_flex_center>li.actives {
+		background: #043458;
+	}
+
+	.stairNavigation_flex_center>li.actives>a {
+		color: white;
+	}
+
+	.stairNavigation_flex_center>li:hover a {
+		color: white;
+	}
+
+	.stairNavigation_flex_center>li:hover span {
+		color: white;
+	}
+
+	.stairNavigation_flex_center>li:hover {
+		background: #043458;
+	}
+
+	.stairNavigation_flex_right {
+		width: 10%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: 600;
+	}
+
+	.stairNavigationTwo {
+		display: none;
+	}
+
+	/* 二级导航 */
+	.secondNavigation {
+		width: 100%;
+		height: 75px;
+		background: white;
+	}
+
+	.secondNavigationMax {
+		width: 85%;
+		height: 100%;
+		display: flex;
+		margin: 0 auto;
+		min-width: 938px;
+		z-index: 999999;
+	}
+
+	.maxListImg {
+		width: 75px;
+		height: 100%;
+		padding: 10px 0;
+		text-align: right;
+	}
+
+	.maxListImg img {
+		width: 75px;
+		height: 100%;
+	}
+
+	.maxListUl {
+		display: flex;
+		height: 100%;
+		align-items: center;
+		margin-left: 10px;
+	}
+
+	.secondNavigationMax>div {
+		color: black;
+		font-size: 15px;
+		font-weight: bold;
+		z-index: 999999;
+	}
+
+	.maxListUl>.listUlItem span:hover {
+		cursor: pointer;
+	}
+
+	.maxListUl>div a {
+		border-right: 1px solid black;
+		padding: 0 10px;
+		text-align: center;
+	}
+
+	.listUlItem {
+		padding: 0 10px;
+	}
+
+	.maxListUl>.lastChild>a {
+		color: #EE2D42;
+		border: 0;
+	}
+
+	.listUlItemOne,
+	.listUlItemTwo {
+		position: relative;
+	}
+
+	.listUlItemOne_xiala,
+	.listUlItemTwo_xiala {
+		width: 100%;
+		position: absolute;
+		top: 20px;
+		left: 0;
+		background: white;
+		padding-left: 10px;
+		box-shadow: 3px 3px 3px white;
+		z-index: 999999;
+	}
+
+	.listUlItemOne_xiala>div,
+	.listUlItemTwo_xiala>div {
+		width: 100%;
+		height: 55px;
+	}
+
+	.listUlItemOne_xiala>div>a,
+	.listUlItemTwo_xiala>div>a {
+		display: block;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+
+	.listUlItemOne_xiala>div>a:hover {
+		background: #0082A9;
+		color: white;
+		font-weight: bold;
+	}
+
+	.listUlItemTwo_xiala>div>a:hover {
+		background: #0082A9;
+		color: white;
+		font-weight: bold;
+	}
+
+	.listUlItemOne_xiala>div>a,
+	.listUlItemTwo_xiala>div>a {
+		border: 0;
+	}
+
+	.secondNavigationMin {
+		display: none;
+	}
+
+	@media screen and (max-width: 760px) {
+		body {
+			width: 100%;
+			overflow-x: hidden;
+		}
+
+		/* 包含以下五种的链接 */
+		a {
+			text-decoration: none;
+		}
+
+		/*正常的未被访问过的链接*/
+		a:link {
+			text-decoration: none;
+		}
+
+		/*已经访问过的链接*/
+		a:visited {
+			text-decoration: none;
+		}
+
+		/*鼠标划过(停留)的链接*/
+		a:hover {
+			text-decoration: none;
+			color: white;
+		}
+
+		/* 正在点击的链接，鼠标在元素上按下还没有松开*/
+		a:active {
+			text-decoration: none;
+		}
+
+		/* 获得焦点的时候 鼠标松开时显示的颜色*/
+		a:focus {
+			text-decoration: none;
+			color: white;
+		}
+
+		.stairNavigationOne {
+			display: none;
+		}
+
+		.stairNavigationTwo {
+			display: block;
+			width: 100%;
+			height: 60px;
+			display: flex;
+		}
+
+		.stairNavigationTwo>.imageBox {
+			width: 80%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			padding: 0 20px;
+		}
+
+		.stairNavigationTwo>.contentBox {
+			width: 20%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			background: white;
+		}
+
+		.stairNavigationTwo>.imageBox>img {
+			width: 80px;
+			height: 50px;
+		}
+
+		.stairNavigationTwo>.contentBox>span:nth-child(1) {
+			color: #EE2D42;
+			font-weight: bold;
+		}
+
+		.stairNavigationTwo>.contentBox>span:last-child {
+			color: white;
+			width: 50px;
+			height: 60px;
+			background: #043458;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-weight: bold;
+		}
+
+		.stairNavigationTwo>.contentBox>img {
+			width: 17px;
+			height: 17px;
+		}
+
+		/* 二级导航 */
+		.secondNavigationMax {
+			display: none;
+		}
+
+		.secondNavigationMin {
+			width: 100%;
+			background: #043458;
+			color: white;
+			font-weight: bold;
+			display: block;
+			transform: translateX(100%);
+			transition: all .5s;
+			/* position: null; */
+		}
+
+		.secondNavigationMin_topBtn {
+			width: 100%;
+			height: 55px;
+			background: #F2F1F1;
+			display: flex;
+			align-items: center;
+			color: #305774;
+			position: relative;
+		}
+
+		.secondNavigationMin_topBtn>div {
+			height: 100%;
+			padding: 0 15px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.secondNavigationMin_topBtn>img {
+			display: block;
+			width: 22px;
+			height: 22px;
+			position: absolute;
+			right: 10px;
+		}
+
+		.topBtn_active {
+			background: #043458;
+			color: white;
+		}
+
+		.secondNavigationMin_content>div {
+			width: 100%;
+			text-indent: 40px;
+			padding: 10px 0;
+		}
+
+		.secondNavigationMin_content_btnOne_content {
+			height: 0;
+			background: #0082A9;
+			transform: translateY(20px);
+			transition: all .5s;
+			overflow: hidden;
+		}
+
+		.secondNavigationMin_content_btnTow_content {
+			height: 0;
+			background: #0082A9;
+			transition: all .5s;
+			overflow: hidden;
+			transform: translateY(20px);
+		}
+
+		.secondNavigationMin_content_btnOne_content>div {
+			padding: 10px 0;
+		}
+
+		.secondNavigationMin_content_btnTow_content>div {
+			padding: 10px 0;
+		}
+
+		.secondNavigationMin_content>div:nth-last-child(1) {
+			color: #A6B8C5;
+		}
+
+		.secondNavigationMin_content>div:nth-last-child(2) {
+			color: #A6B8C5;
+		}
+
+		.secondNavigationMin_content>div:nth-last-child(3) {
+			color: #EE2D42;
+		}
+
+		.secondNavigationMin_content>div>p {
+			width: 100%;
+			display: flex;
+			align-items: center;
+		}
+
+		.secondNavigationMin_content>div>p>a {
+			display: inline-block;
+			width: 80%;
+		}
+
+	}
+</style>
+
+
+<div class="headerNavHeader">
+	<!-- 一级导航 -->
+	<div class="stairNavigationWrapper">
+		<!-- 最大屏幕下 -->
+		<div class="stairNavigationOne">
+			<ul class="stairNavigation_flex stairNavigation_flex_left">
+				<li><a href="#">会员/学员</a></li>
+				<li><a href="#">企业合作</a></li>
+				<li><a href="#">职业生涯</a></li>
+			</ul>
+			<ol class="stairNavigation_flex stairNavigation_flex_center">
+				<li><span class="glyphicon glyphicon-search"></span><a href="#">最近学习中心</a></li>
+				<li><a href="#">关于华尔街英语</a></li>
+				<li><a href="#">新会员</a></li>
+				<li><a href="#">会员登录</a></li>
+				<li><a href="#">学员通道</a></li>
+			</ol>
+			<ul class="stairNavigation_flex stairNavigation_flex_right">
+				<li>中</li>
+				<li>|</li>
+				<li>EN</li>
+			</ul>
+		</div>
+		<!-- 最小屏幕下 -->
+		<div class="stairNavigationTwo">
+			<div class="imageBox">
+				<img src="../../img/config/download.jpg" alt="">
+			</div>
+			<div class="contentBox">
+				<span>试听</span>
+				<img src="../../img/config/iphone.png" alt="">
+				<img src="../../img/config/liuyan.png" alt="">
+				<span class="caidanBtn">菜单</span>
+			</div>
+		</div>
+	</div>
+	<!-- 二级导航 -->
+	<div class="secondNavigation">
+		<!-- 最大屏 -->
+		<div class="secondNavigationMax">
+			<div class="maxListImg">
+				<img src="../../img/config/download.jpg" alt="">
+			</div>
+			<div class="maxListUl">
+				<div class="listUlItem listUlItemOne">
+					<div class="listUlItemOne_btn">
+						<span>你选择华尔街英语是因为</span>
+						<img src="../../img/config/buttomjian.png" alt="">
+					</div>
+					<div class="listUlItemOne_xiala">
+						<div><a href="#">为职业发展</a></div>
+						<div><a href="#">为自己的成长</a></div>
+						<div><a href="#">为旅行</a></div>
+						<div><a href="#">尊享服务</a></div>
+					</div>
+				</div>
+				<div><a href="#">课程</a></div>
+				<div><a href="#">学习之旅</a></div>
+				<div><a href="#">优质师资</a></div>
+				<div class="listUlItem listUlItemTwo">
+					<div class="listUlItemTwo_btn">
+						<span>最新消息</span>
+						<img src="../../img/config/buttomjian.png" alt="">
+					</div>
+					<div class="listUlItemTwo_xiala">
+						<div><a href="#">公司新闻</a></div>
+						<div><a href="#">精彩活动</a></div>
+					</div>
+				</div>
+				<div><a href="#">联系我们</a></div>
+				<div class="lastChild"><a href="#">免费体验</a></div>
+			</div>
+		</div>
+		<!-- 最小屏 -->
+		<div class="secondNavigationMin">
+			<div class="secondNavigationMin_topBtn">
+				<div class="topBtn_active"><a href="#">会员/学员</a></div>
+				<div><a href="#">企业合作</a></div>
+				<div><a href="#">职业生涯</a></div>
+				<img src="../../img/config/deleteBtn.png" alt="" class="hideBtn">
+			</div>
+			<div class="secondNavigationMin_content">
+				<div><a href="#">首页</a></div>
+				<div class="secondNavigationMin_content_btnOne">
+					<p><a href="#">你选择华尔街英语的原因</a><span class="glyphicon glyphicon-play" aria-hidden="true"></span></p>
+					<div class="secondNavigationMin_content_btnOne_content">
+						<div><a href="#">为职业发展</a></div>
+						<div><a href="#">为自己的成长</a></div>
+						<div><a href="#">为旅行</a></div>
+						<div><a href="#">尊享服务</a></div>
+						<div><a href="#">为孩子</a></div>
+					</div>
+				</div>
+				<div><a href="#">课程</a></div>
+				<div><a href="#">学习之旅</a></div>
+				<div><a href="#">优质师资</a></div>
+				<div class="secondNavigationMin_content_btnTow">
+					<p><a href="#">最新消息</a><span class="glyphicon glyphicon-play" aria-hidden="true"></span></p>
+					<div class="secondNavigationMin_content_btnTow_content">
+						<div><a href="#">公司新闻</a></div>
+						<div><a href="#">精彩活动</a></div>
+					</div>
+				</div>
+				<div><a href="#">联系我们</a></div>
+				<div><a href="#">免费体验</a></div>
+				<div><a href="#">最近学习中心</a></div>
+				<div><a href="#">关于华尔街英语</a></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	$('.stairNavigation_flex_left').on('click', 'li', function() {
+		// console.log($(this))
+		$(this).addClass('active')
+		$(this).siblings().removeClass('active')
+	})
+	$('.stairNavigation_flex_center').on('click', 'li', function() {
+		// console.log($(this))
+		$(this).addClass('actives')
+		$(this).siblings().removeClass('actives')
+	})
+	$('.listUlItemOne').mouseover(() => {
+		$('.listUlItemOne img').attr('src', '/img/config/topjian.png')
+		$('.listUlItemOne_xiala').show()
+	})
+	$('.listUlItemOne').mouseout(() => {
+		$('.listUlItemOne img').attr('src', '/img/config/buttomjian.png')
+		$('.listUlItemOne_xiala').hide()
+	})
+	$('.listUlItemTwo').mouseover(() => {
+		$('.listUlItemTwo img').attr('src', '/img/config/topjian.png')
+		$('.listUlItemTwo_xiala').show()
+	})
+	$('.listUlItemTwo').mouseout(() => {
+		$('.listUlItemTwo img').attr('src', '/img/config/buttomjian.png')
+		$('.listUlItemTwo_xiala').hide()
+	})
+	$(document).ready(() => {
+		$('.listUlItemTwo_xiala').hide()
+		$('.listUlItemOne_xiala').hide()
+	})
+	let secondNavigationMin_content_btnOne_content_show = false
+	$('.secondNavigationMin_content_btnOne').click(() => {
+		secondNavigationMin_content_btnOne_content_show = !secondNavigationMin_content_btnOne_content_show
+		if (secondNavigationMin_content_btnOne_content_show) {
+			$('.secondNavigationMin_content_btnOne_content').animate({
+				height: '210px'
+			})
+		} else {
+			$('.secondNavigationMin_content_btnOne_content').animate({
+				height: '0'
+			})
+		}
+	})
+	let secondNavigationMin_content_btnTow_content_show = false
+	$('.secondNavigationMin_content_btnTow').click(() => {
+		secondNavigationMin_content_btnTow_content_show = !secondNavigationMin_content_btnTow_content_show
+		if (secondNavigationMin_content_btnTow_content_show) {
+			$('.secondNavigationMin_content_btnTow_content').animate({
+				height: '80px'
+			})
+		} else {
+			$('.secondNavigationMin_content_btnTow_content').animate({
+				height: '0'
+			})
+		}
+	})
+
+	$('.caidanBtn').click(() => {
+		$('.secondNavigationMin').attr('style', 'transform: translateX(0);')
+	})
+	$('.hideBtn').click(() => {
+		$('.secondNavigationMin').attr('style', 'transform: translateX(100%);')
+	})
+
+	$('.secondNavigationMin_topBtn').on('click', 'div', function() {
+		// console.log($(this))
+		$(this).addClass('topBtn_active')
+		$(this).siblings().removeClass('topBtn_active')
+	})
+
+	// 屏幕滚动事件
+	$(document).scroll(function() {
+		var scroH = $(document).scrollTop();
+		var viewH = $(window).height();
+		if (scroH > 20) {
+			$('.stairNavigationWrapper').hide()
+			$('.secondNavigation').attr('style', 'position: fixed;top:0;left:0;')
+			$('.secondNavigation').animate({
+				height: '55px'
+			})
+		} else {
+			$('.stairNavigationWrapper').show()
+			$('.secondNavigation').attr('style', 'position: static;')
+		}
+	});
+</script>

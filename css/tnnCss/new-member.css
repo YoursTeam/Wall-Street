@@ -68,7 +68,7 @@ input{
 }
 .warp-name-box{
 	display: flex;
-	width: 47%;
+	width: 41%;
 	/* background: red; */
 	justify-content: space-between;
 	font-size: 16px;
