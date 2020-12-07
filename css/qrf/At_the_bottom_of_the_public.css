@@ -44,7 +44,7 @@ footer{
 }
 .wrapper_footer .col{
 	float: left;
-	padding: 0 75px 0 10px
+	padding: 0 60px 0 10px
 }
 .wrapper_footer .col h3{
 	color: #fff;
@@ -147,6 +147,13 @@ footer{
 	height: 100%;
 	display: block;
 }
+.icon-icon-wechat{
+	background-image: url('../../img/qrf/icon-wechat-mobile.png');
+	background-size: 100% auto;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	
+}
 .icon-icon-weibo {
     background-image: url('../../img/qrf/sprites_img.png');
     background-position: -1906px -323px;
@@ -196,6 +203,9 @@ footer{
 	}
 	.wrapper_footer .col {
 	   padding: 0 10px;
+	}
+	.wrapper_footer .col:nth-child(2n + 1){
+		clear: both;
 	}
 	
 	/* 页脚版权 */
