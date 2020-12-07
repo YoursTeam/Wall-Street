@@ -42,7 +42,7 @@ body{font-family: none;}
 /*页面公共样式*/
 *{outline:none;}
 #study_travel{
-    padding-top: 110px;
+    /* padding-top: 110px; */
 }
 #study_travel .container{
     padding: 0;
