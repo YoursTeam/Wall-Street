@@ -3,7 +3,11 @@ $('.gyheiyy').load('../config/config.html', function (){
         $('<link/>', { rel:"stylesheet", href: '../../css/config/config.css'})
     )
 })
-
+$('.bottom').load('../qrf/At_the_bottom_of_the_public.html',function(){
+    $(this).append(
+        $('<link/>', { rel:"stylesheet", href: '../../css/qrf/At_the_bottom_of_the_public.css'})
+    )
+})
 
 $('.selecticon').click(() => {
     $('.listshow').css({

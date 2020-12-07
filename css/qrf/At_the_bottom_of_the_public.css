@@ -1,6 +1,7 @@
 footer{
 	background-color: #043458;
 	min-width: 1300px;
+	z-index: -1;
 }
 .wrapper_footer{
 	color: #fff;
