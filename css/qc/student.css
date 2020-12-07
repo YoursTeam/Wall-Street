@@ -1,20 +1,7 @@
-/* .stu_top_box{
-    margin-top: 70px;
-    padding-left: 160px;
-}
-.ason_pc_unids{
-
-}
-.ason_pc_unids h1{
-    font-size: 50px;
-    color: #
-} */
-
-
-/*news*/
-
 .ason-student {
     overflow: hidden;
+    position: relative;
+    z-index: -1;
 }
 .ason-student .banner {
     position: relative;

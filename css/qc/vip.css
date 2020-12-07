@@ -1,5 +1,7 @@
 .vip_conent_box{
-    margin: 110px 80px;
+    margin-left: 110px;
+    z-index: -1;
+    padding-bottom: 218px;
 }
 .vip_conent_title{
     margin-top: 60px;
@@ -35,7 +37,7 @@
     width: 220px;
     margin-top: 8px;
     margin-bottom: 6px;
-    margin-left: 205px;
+    margin-left: 200px;
     font-size: 18px;
     color: #fff;
     background: #043458;

@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <div class="gyheiyy"></div>
     <div class="vip_conent_box container">
         <div class="row">
 
@@ -76,7 +77,7 @@
 
 
     </div>
-
+    <div class="bottom"></div>
 
 </body>
 <script src="../../js/jquery.js"></script>
@@ -105,6 +106,20 @@
   
     }
     })
+    
+$('.gyheiyy').load('../config/config.html', function (){
+    $(this).append(
+        $('<link/>', { rel:"stylesheet", href: '../../css/config/config.css'})
+    )
+    $(this).append(
+        $('<script/>',{src: '../../js/config/config.js'})
+    )
+})
+$('.bottom').load('../qrf/At_the_bottom_of_the_public.html',function(){
+    $(this).append(
+        $('<link/>', { rel:"stylesheet", href: '../../css/qrf/At_the_bottom_of_the_public.css'})
+    )
+})
 </script>
 
 </html>

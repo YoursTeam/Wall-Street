@@ -28,7 +28,7 @@ $(document).ready(()=>{
 	$('.listUlItemTwo_xiala').hide()
 	$('.listUlItemOne_xiala').hide()
 })
-let secondNavigationMin_content_btnOne_content_show = false
+var secondNavigationMin_content_btnOne_content_show = false
 $('.secondNavigationMin_content_btnOne').click(()=>{
 	secondNavigationMin_content_btnOne_content_show = !secondNavigationMin_content_btnOne_content_show
 	if(secondNavigationMin_content_btnOne_content_show){
