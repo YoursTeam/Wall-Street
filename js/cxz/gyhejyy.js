@@ -1,1 +1,0 @@
-$('.config_header').load('/html/config/config.html')

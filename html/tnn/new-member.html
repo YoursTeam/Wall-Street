@@ -14,6 +14,7 @@
 	</head>
 
 	<body>
+		<div class="top-box" style="z-index: 999999;"></div>
 		<div class="new-member container">
 			<h1>新会员注册</h1>
 			<div class="member-box">
@@ -164,14 +165,13 @@
 				</div>
 			</div>
 		</div>
-
-
+		<div class="footer" style='margin-top: 220px'></div>
 	</body>
 	<script type="text/javascript" src='../../js/jquery.min.js'></script>
-	<script type="text/javascript" src="../../js/tnnData/select-box.js">
-
-	</script>
+	<script type="text/javascript" src="../../js/tnnData/select-box.js"></script>
 	<script>
+		$('.top-box').load('header.html');
+		$('.footer').load('footer.html');
 		let previous = [{
 			"code": "CN-31",
 			"name": "上海市"
