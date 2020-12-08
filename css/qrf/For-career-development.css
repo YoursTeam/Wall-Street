@@ -28,9 +28,14 @@
 }
 .container_list li{
 	color: #fff;
+} 
+.container_list li{
 	font-size: 16px;
 	line-height: 18px;
 	padding:0 5px 0 5px;
+}
+.container_list li a{
+	color: #fff;
 }
 .container_list li:nth-child(1){
 	border-right: 1px solid #fff;
