@@ -57,7 +57,7 @@
 #study_travel .main-content .learn-content-line{
     width: 190px;
     height: 100%;
-    background: url(../../img/image/line.png) center 0 no-repeat;
+    background: url(../../../img/jfq/line.png) center 0 no-repeat;
     position: absolute;
     z-index: 0;
     top: 50px;
@@ -69,7 +69,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: url(../../img/image/line-active.png) center 0 no-repeat;
+    background: url(../../../img/jfq/line-active.png) center 0 no-repeat;
 }
 #study_travel .main-content .learn-content .learn-content-item{
     display: flex;
@@ -248,7 +248,7 @@
     transform: translate(-50%,-50%);
     width: 62px;
     height: 62px;
-    background: url(../../img/image/play-btn.png) 0 0 no-repeat;
+    background: url(../../../img/jfq/play-btn.png) 0 0 no-repeat;
     z-index: 10;
     opacity: 1;
 }

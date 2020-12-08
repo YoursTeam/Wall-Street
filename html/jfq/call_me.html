@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <title>联系我们</title>
-	<link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/call_me/call_me.css">
-    <link rel="stylesheet" href="../css/select_box.css">
-    <link rel="stylesheet" href="../css/call_me/call_me_767.css">
-    <link rel="stylesheet" href="../css/common.css">
-    <script src="../js/jquery.js"></script>
-    <script src="../js/select_box.js"></script>
+	<link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/jfq/call_me/call_me.css">
+    <link rel="stylesheet" href="../../css/jfq/select_box.css">
+    <link rel="stylesheet" href="../../css/jfq/call_me/call_me_767.css">
+    <link rel="stylesheet" href="../../css/jfq/common.css">
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/jfq/select_box.js"></script>
 </head>
 <script>
     var deviceRatio = window.outerWidth / 1400;
@@ -141,18 +141,6 @@
                                     <label class="control-label " for="about.province">
                                         省份 <span>*</span>
                                     </label>
-                                    <!-- <div class="content_list">
-                                        <div class="select">
-                                            <i>- 请选择省份 -</i>
-                                            <span></span>
-                                        </div>
-                                        <div>
-                                            <ul>
-                                                <li></li>
-                                            </ul>
-                                            <div></div>
-                                        </div>
-                                    </div> -->
                                     <div class="chosen-container previous">
                                         <div class="chosen-single">
                                             <span>
@@ -205,8 +193,8 @@
 </body>
 <script>
     $(function(){
-		$('header').load('header.html');
-		$('.footer').load('footer.html');
+		$('header').load('../config/header.html');
+		$('.footer').load('../config/footer.html');
 	})
     $(function () {
         let cityData = [];

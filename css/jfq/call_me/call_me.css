@@ -27,7 +27,7 @@
 .content_item .item_style .item_icon{
     float: left;
     margin-top: 20px;
-    background-image: url(../../img/image/sprites_img.png);
+    background-image: url(../../../img/jfq/sprites_img.png);
     width: 49px;
     height: 49px;
 }
@@ -76,7 +76,7 @@
     padding-top: 75px;
 }
 .content_bottom:before {
-    background: url(../../img/image/bg-contact-before.png) center top no-repeat;
+    background: url(../../../img/jfq/bg-contact-before.png) center top no-repeat;
     background-size: 100% 100%;
     width: 100%;
     height: 37px;
@@ -171,7 +171,7 @@
     font-style: normal;
 }
 .content .form-group .content_list .select span{
-    background: url(../../img/image/chosen-sprite.png) no-repeat 0 2px;
+    background: url(../../../img/jfq/chosen-sprite.png) no-repeat 0 2px;
 } */
 .form_submit{
     display: flex;
@@ -203,7 +203,7 @@
     margin: 35px auto 10px;
     width: 18px;
     height: 31px;
-    background:url("../../img/image/sprites_img.png") no-repeat;
+    background:url("../../../img/jfq/sprites_img.png") no-repeat;
     background-position: -1202px -776px;
 }
 
