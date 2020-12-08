@@ -4,7 +4,7 @@
         text-decoration: none;
         color:black;
     }
-
+    
     /*正常的未被访问过的链接*/
     a:link {
         text-decoration: none;
@@ -31,7 +31,10 @@
         text-decoration: none;
         color: black;
     }
-
+    .headerNavHeader{
+        position: relative;
+        z-index: 9999;
+    }
     .stairNavigationOne {
         width: 100vw;
         min-width: 1100px;
@@ -119,6 +122,14 @@
         width: 100%;
         height: 75px;
         background: white;
+    }
+    .secondNavigation.active{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 999;
+        height: 55px;
+        transition: 0.6s;
     }
 
     .secondNavigationMax {
@@ -594,11 +605,10 @@ $(document).scroll(function() {
 	var viewH = $(window).height();
 	if(scroH >20){
 		$('.stairNavigationWrapper').hide()
-		$('.secondNavigation').attr('style','position: fixed;top:0;left:0;z-index:999')
-		$('.secondNavigation').animate({height:'55px'})
+		$('.secondNavigation').addClass('active')
 	}else{
 		$('.stairNavigationWrapper').show()
-		$('.secondNavigation').attr('style','position: static;')
+		$('.secondNavigation').removeClass("active")
 	}
 });
 </script>
