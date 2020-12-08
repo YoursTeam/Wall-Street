@@ -31,9 +31,13 @@
         text-decoration: none;
         color: black;
     }
+    #empty{
+        height: 115px;
+    }
     .headerNavHeader{
-        position: relative;
-        z-index: 9999;
+        position:absolute;
+        z-index:999999;
+        width:100%;
     }
     .stairNavigationOne {
         width: 100vw;
@@ -52,6 +56,7 @@
     .stairNavigation_flex_left {
         width: 45%;
         height: 100%;
+        margin: 0;
     }
 
     .stairNavigation_flex_left li {
@@ -76,6 +81,7 @@
         justify-content: space-between;
         align-items: center;
         font-weight: 600;
+        margin: 0;
     }
 
     .stairNavigation_flex_center>li {
@@ -124,6 +130,14 @@
         background: white;
     }
     .secondNavigation.active{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 999;
+        height: 55px;
+        transition: 0.6s;
+    }
+    .stairNavigationTwo.active{
         position: fixed;
         top: 0px;
         left: 0px;
@@ -237,6 +251,9 @@
     }
 
     @media screen and (max-width: 760px) {
+        #empty{
+            height: 60px;
+        }
         body {
             width: 100%;
             overflow-x: hidden;
@@ -283,8 +300,11 @@
             width: 100%;
             height: 60px;
             display: flex;
+            background:white;
         }
-
+        .secondNavigation{
+            height: 0;
+        }
         .stairNavigationTwo>.imageBox {
             width: 80%;
             height: 100%;
@@ -294,7 +314,8 @@
         }
 
         .stairNavigationTwo>.contentBox {
-            width: 20%;
+            width: 60%;
+            max-width: 134px;
             height: 100%;
             display: flex;
             align-items: center;
@@ -436,7 +457,7 @@
         <!-- 最大屏幕下 -->
         <div class="stairNavigationOne">
             <ul class="stairNavigation_flex stairNavigation_flex_left">
-                <li><a href="#">会员/学员</a></li>
+                <li class="active"><a href="#">会员/学员</a></li>
                 <li><a href="#">企业合作</a></li>
                 <li><a href="#">职业生涯</a></li>
             </ul>
@@ -541,6 +562,7 @@
         </div>
     </div>
 </div>
+<div id="empty"></div>
 <script>
 $('.stairNavigation_flex_left').on('click','li',function(){
 	$(this).addClass('active').siblings().removeClass('active')
@@ -595,20 +617,28 @@ $('.hideBtn').click(()=>{
 })
 
 $('.secondNavigationMin_topBtn').on('click','div',function(){
-	// console.log($(this))
 	$(this).addClass('topBtn_active').siblings().removeClass('topBtn_active')
 })
 
 // 屏幕滚动事件
 $(document).scroll(function() {
 	var scroH = $(document).scrollTop();
-	var viewH = $(window).height();
-	if(scroH >20){
-		$('.stairNavigationWrapper').hide()
-		$('.secondNavigation').addClass('active')
-	}else{
-		$('.stairNavigationWrapper').show()
-		$('.secondNavigation').removeClass("active")
-	}
+    if($(window).outerWidth()<767){
+        $('.secondNavigation').removeClass("active")
+        if(scroH >20){
+            $(".stairNavigationTwo").addClass('active')
+        }else{
+            $(".stairNavigationTwo").removeClass("active")
+        }
+        
+    }else{
+        if(scroH >20){
+            $('.stairNavigationWrapper').hide()
+            $('.secondNavigation').addClass('active')
+        }else{
+            $('.stairNavigationWrapper').show()
+            $('.secondNavigation').removeClass("active")
+        }
+    }
 });
 </script>
