@@ -1,3 +1,19 @@
+$('header').load('./config2.html', function () {
+  $(this).prepend(
+    $('<link/>', { rel: "stylesheet", href: '../../css/config/config.css' })
+  )
+  $(this).append(
+	$('<script></script>', { src: '../../js/Eddie/config2.js'} )
+  )
+})
+$('footer').load('./At_the_bottom_of_the_public2.html', function () {
+
+  $(this).find('.col-hotline_footer-box_img img').attr("src", "../../img/Eddie/image-student/wechar_qr.jpg")
+  $(this).find('.col.col-display1 img').attr("src", "../../img/qrf/logo_wse_footer.png")
+  $(this).find('.footer_security_record img').attr("src", "../../img/qrf/record_icon.png")
+  $(this).find('.col-hotline_footer-box_img').css({ boxSizing: "content-box" })
+})
+
 $.ajax({
   type: "get",
   url: "../../js/Eddie/team-video.json",

@@ -44,6 +44,22 @@ $.ajax({
         }, 200)
       })
     })
+
+    $('header').load('./html/Eddie/config.html', function () {
+      $(this).prepend(
+        $('<link/>', { rel: "stylesheet", href: './css/config/config.css' })
+      )
+      $(this).append(
+        $('<script/>', { src: './js/Eddie/js-student/config.js' })
+      )
+    })
+    $('footer').load('./html/Eddie/At_the_bottom_of_the_public.html', function () {
+
+      $(this).find('.col-hotline_footer-box_img img').attr("src", "./img/Eddie/image-student/wechar_qr.jpg")
+      $(this).find('.col.col-display1 img').attr("src", "./img/qrf/logo_wse_footer.png")
+      $(this).find('.footer_security_record img').attr("src", "./img/qrf/record_icon.png")
+      $(this).find('.col-hotline_footer-box_img').css({ boxSizing: "content-box" })
+    })
   }
 })
 
@@ -121,7 +137,6 @@ function btn (p, n) {
       left: -index * 100 + "%"
     }, 800)
   })
-
   let setInt = setInterval(function () {
     n.click()
   }, 5000)
@@ -130,6 +145,7 @@ function btn (p, n) {
   }, () => {
     setInt = setInterval(function () {
       n.click()
-    }, 2000)
+    }, 5000)
+
   })
 }
