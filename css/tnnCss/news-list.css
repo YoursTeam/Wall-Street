@@ -2,7 +2,7 @@
 	.news-head {
 		display: flex;
 		width: 100%;
-		padding: 0 131px;
+		padding: 0 40px;
 		justify-content: space-between;
 		margin-bottom: 60px;
 	}
@@ -23,7 +23,7 @@
 	}
 
 	.news-page-add a {
-		width: 68px;
+		width: 66px;
 		height: 136px;
 		line-height: 136px;
 		text-align: center;

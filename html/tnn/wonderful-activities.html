@@ -19,6 +19,7 @@
 		<!-- <script src="https://unpkg.com/better-scroll/dist/bscroll.min.js"></script> -->
 	</head>
 	<body>
+		<div class="top-box" style="z-index: 999999;"></div>
 		<div class="mian-content">
 			<!-- 学习之旅开始 -->
 			<div id="head-page"></div>
@@ -47,38 +48,10 @@
 				<div class="learning-slide">
 					<div class="slider">
 						<ul class="slide-box slide-boxOne" >
-						<!-- 	<li class='col-md-12'>
-								<img src="../../img/tnnImg/T10_02_FT.png" class='img-responsive'>
-								<h3 i18n="title">课程顾问</h3>
-								<p i18n="content">根据你的专业和个人需求，帮助你制定适合的学习计划，并为你全程提供支持。</p>
-							</li>
-							<li class='col-md-12'>
-								<img src="../../img/tnnImg/T10_02_SA.png" class='img-responsive'>
-								<h3 i18n="title2">课程顾问</h3>
-								<p i18n="content2">根据你的专业和个人需求，帮助你制定适合的学习计划，并为你全程提供支持。</p>
-							</li>
-							<li class='col-md-12'>
-								<img src="../../img/tnnImg/T10_02_CC.png" class='img-responsive'>
-								<h3 i18n="title3">课程顾问</h3>
-								<p i18n="content3">根据你的专业和个人需求，帮助你制定适合的学习计划，并为你全程提供支持。</p>
-							</li> -->
+						
 						</ul>
 						<ul class="slide-box slide-boxTwo" >
-							<!-- <li>
-								<img src="../../img/tnnImg/T10_02_CC.png" >
-								<h3 i18n="title4">课程顾问</h3>
-								<p i18n="content4">根据你的专业和个人需求，帮助你制定适合的学习计划，并为你全程提供支持。</p>
-							</li>
-							<li>
-								<img src="../../img/tnnImg/T10_02_SM.png" >
-								<h3 i18n="title5">课程顾问</h3>
-								<p i18n="content5">根据你的专业和个人需求，帮助你制定适合的学习计划，并为你全程提供支持。</p>
-							</li>
-							<li>
-								<img src="../../img/tnnImg/T10_02_CSA.png" >
-								<h3 i18n="title6">课程顾问</h3>
-								<p i18n="content6">根据你的专业和个人需求，帮助你制定适合的学习计划，并为你全程提供支持。</p>
-							</li> -->
+							
 						</ul>
 					</div>
 					<div class="slide-btn">
@@ -95,71 +68,18 @@
 		<div  class="i18n" >
 			
 		</div>
+		<div class="footer" style='margin-top: 120px'></div>
 		<!-- <div i18n="footer.about">About</div>
 		<div i18n="footer.contact">Contact us</div> -->
-		<script>
-			// function bigSlide(){
-			// 	let iw=$('.slide-box').width();
-			// 	// console.log(iw);
-			// 	$('.slide-left').click(function(){
-			// 		$('.slider').css({'transform':'translateX(0px)'});
-			// 		$(this).css({'display':'none'});
-			// 		$('.slide-right').css({'display':'block'})
-			// 	});
-			// 	$('.slide-right').click(function(){
-			// 		$('.slider').css({'transform':'translateX(-800px)'});
-			// 		$(this).css({'display':'none'});
-			// 		$('.slide-left').css({'display':'block'});
-			// 	});
-			// }
 			
-			// function smallSlide(){
-			// 	var index=0;
-			// 	let iw=$('.slide-box li').outerWidth();
-			// 	$('.slide-right').click(function(){
-			// 		index++;
-			// 		console.log(index)
-			// 		$('.slider').css({'transform':"translateX(-"+iw*index+"px)"});
-			// 		if(index>=5){
-			// 			$(this).css({'display':'none'});
-			// 			$('.slide-left').css({'display':'block'});
-			// 		}
-			// 	});
-			// 	$('.slide-left').click(function(){
-			// 		index--;
-			// 		$('.slider').css({'transform':"translateX(-"+iw*index+"px)"});
-			// 		console.log(index)
-			// 		if(index<=0){
-			// 			$(this).css({'display':'none'});
-			// 			$('.slide-right').css({'display':'block'});
-			// 		}
-			// 		console.log(index);
-			// 	});
-			// }
-			
-			// // if($(document).width()>=767){
-			// // 	bigSlide();
-			// // }
-			// // if($(document).width()<=767){
-			// // 	smallSlide();
-			// // }
-			// $(window).resize(function(){
-			// 	let docIw=$(document).width();
-			// 	console.log(docIw)
-			// 	if(docIw>=767){
-			// 		bigSlide();
-			// 	}else{
-			// 		smallSlide();
-			// 	}
-				
-			// })
-		</script> 
 	</body>
 	<script src="https://unpkg.com/@better-scroll/core@latest/dist/core.js"></script>
 	
 	<!-- minify -->
 	<script src="https://unpkg.com/@better-scroll/core@latest/dist/core.min.js"></script>
 	<script>
+		$('.top-box').load('../config/header.html');
+		$('.footer').load('../config/footer.html');
 		$.ajax({
 			url:'../../js/tnnData/learningTeam.json',
 			type:'get',

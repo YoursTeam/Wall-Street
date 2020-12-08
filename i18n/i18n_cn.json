@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "id":"001",
 	"img1":"../../img/tnnImg/T10_02_CC.png",
     "title":"外教师资",
@@ -18,4 +19,8 @@
 	"id6":"006",
 	"title6":"客服经理",
 	"content6":"客服助理会在你到来的时候接待你，并协助你预订课程，为你做好各方面的学习准备。"
+=======
+    "footer.about": "关于",
+    "footer.contact": "联系我们"
+>>>>>>> 82dd49adafea34a2f9a27aa87e70e5b11c1ddc45
 }
