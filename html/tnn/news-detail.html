@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+		<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+		<script type="text/javascript" src='../../js/jquery.min.js'></script>
+		<style type="text/css">
+			.news-content{
+				padding: 0 60px;
+			}
+			.news-detail-title{
+				font-size: 70px;
+				color: #ee2d42;
+				font-weight: bold;
+				line-height: 80px;
+				/* margin-left: 60px; */
+				margin-bottom: 40px;
+			}
+			.detail-content h3{
+				color: #023359;
+				font-size: 30px;
+				line-height: 40px;
+				font-weight: bold;
+			}
+			.news-date{
+				font-size: 18px;
+				color: #333333;
+			}
+			.details p{
+				margin: 20px 0;
+				font-size: 16px;
+				line-height: 28px;
+			}
+			.details h4{
+				font-weight: bold;
+				margin: 30px 0;
+				font-size: 16px;
+			}
+			@media screen and (max-width: 767px){
+				.news-detail-title{
+					font-size: 30px;
+					line-height: 36px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="top-box" style="z-index: 999999;"></div>
+		<div class="container news-content">
+			<h2 class='news-detail-title'>公司新闻</h2>
+			<div class="detail-content">
+				<!-- <h3>职场英语“停课不停学” 华尔街英语与众携手共抗疫情</h3>
+				<p class="news-date">2020年11月30日</p>
+				<div class="details">
+					<p>在全国上下共同战“疫”之下，新增确诊病例多日连降、治愈率接连上升，让全体中国人为之振奋。但疫情导致的各行各业停工或延期复工仍然影响深远，教育培训行业正在经历疫情防控的另一种大考：哪类机构应变得当，面对转型毫无压力并能够顺势而上？哪类则重度依赖线下资源而面临危机？</p>
+					<p>早在春节假期开始前，华尔街英语全国各学习中心的工作人员已用消毒用品对中心公共区域、学习设施等进行消毒，并将防护用具分发给前来上课的学员，筑起了疫情爆发初期的防线。随着全国战“疫”全面铺开，华尔街英语相应国家号召，除第一时间叫停全国线下实体中心的课程，不聚集学员、降低病毒传播风险外，为了保障学员权益，自动将现有Deluxe、VIP、VVIP学员合同期免费延长三个月。</p>
+					<h4>责任导向：职场英语教育“停课不停学”</h4>
+					<p>除了“连续性”以外，英语学习的“互动性”也丝毫不能忽视，这也是学员选择线下培训重要的原因之一。如何让以地区为单位的学员依然在线上学习中得到英语学习的“互动性”体验，也成为了各个学习中心在疫情期间的重点工作。对此，上海各学习中心发起#ikeeplearning#挑战，将学习打卡和日常挑战同步，学员与员工远程互动，日常学习兴趣被时时激发。而广州区域则开启了#I’m Online#活动，让学员自选参与项目，积极开展挑战并每周积累，并和中心工作人员分享、交流。此外，针对疫情期间的学员服务需求，华尔街英语还推进了“400不断线”工作，全国400热线每周7*24小时在线，及时高效地为全国学员提供支持。
+
+一系列应对疫情的举措，均源自教育机构对社会和用户的社会责任。华尔街英语强调，尊重，责任和诚信，是华尔街英语一切行动的基本准则，是华尔街英语成功的关键因素。三大价值观帮助华尔街英语明辨是非，让工作人员对业务方向是否正确以及目标能否实现做出判断。</p>
+				</div> -->
+			</div>
+		</div>
+		<div class="footer" style='margin-top: 120px'></div>
+		<script>
+		$('.top-box').load('../config/header.html');
+		$('.footer').load('../config/footer.html');
+        function getUrlParam(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+            var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+            if (r != null) return unescape(r[2]); return null; //返回参数值
+        }
+		var pid= getUrlParam("id");
+		console.log(pid);
+		$.ajax({
+			url:'../../js/tnnData/newsList.json',
+			type:'get',
+			success:function(data){
+				console.log(data.newsList);
+				$.each(data.newsList,(i,d)=>{
+					console.log(pid==d.id);
+					if(pid==d.id){
+						$(`<h3>${d.title}</h3>
+									<p class="news-date">${d.date}</p>
+									<div class="details">
+										<p>在全国上下共同战“疫”之下，新增确诊病例多日连降、治愈率接连上升，让全体中国人为之振奋。但疫情导致的各行各业停工或延期复工仍然影响深远，教育培训行业正在经历疫情防控的另一种大考：哪类机构应变得当，面对转型毫无压力并能够顺势而上？哪类则重度依赖线下资源而面临危机？</p>
+										<p>早在春节假期开始前，华尔街英语全国各学习中心的工作人员已用消毒用品对中心公共区域、学习设施等进行消毒，并将防护用具分发给前来上课的学员，筑起了疫情爆发初期的防线。随着全国战“疫”全面铺开，华尔街英语相应国家号召，除第一时间叫停全国线下实体中心的课程，不聚集学员、降低病毒传播风险外，为了保障学员权益，自动将现有Deluxe、VIP、VVIP学员合同期免费延长三个月。</p>
+										<h4>责任导向：职场英语教育“停课不停学”</h4>
+										<p>除了“连续性”以外，英语学习的“互动性”也丝毫不能忽视，这也是学员选择线下培训重要的原因之一。如何让以地区为单位的学员依然在线上学习中得到英语学习的“互动性”体验，也成为了各个学习中心在疫情期间的重点工作。对此，上海各学习中心发起#ikeeplearning#挑战，将学习打卡和日常挑战同步，学员与员工远程互动，日常学习兴趣被时时激发。而广州区域则开启了#I’m Online#活动，让学员自选参与项目，积极开展挑战并每周积累，并和中心工作人员分享、交流。此外，针对疫情期间的学员服务需求，华尔街英语还推进了“400不断线”工作，全国400热线每周7*24小时在线，及时高效地为全国学员提供支持。
+					
+					一系列应对疫情的举措，均源自教育机构对社会和用户的社会责任。华尔街英语强调，尊重，责任和诚信，是华尔街英语一切行动的基本准则，是华尔街英语成功的关键因素。三大价值观帮助华尔街英语明辨是非，让工作人员对业务方向是否正确以及目标能否实现做出判断。</p>
+									</div>`).appendTo($('.detail-content'))
+					}
+				})
+				
+			}
+		})
+
+
+			
+			
+			
+			
+			
+
+			//console.log($.getUrlParam(pid))
+		</script>
+	</body>
+</html>

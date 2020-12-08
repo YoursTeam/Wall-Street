@@ -1,0 +1,208 @@
+body{
+	overflow-x: hidden;
+	font-size: 16px;
+}
+.learning-public{
+	margin-bottom: 120px;
+}
+/* 学习之旅开始 */
+.learning-head{
+	padding: 30px 0 0 55px;
+	box-sizing: border-box;
+	position: relative;
+	/* margin: 45px 0px 45px 60px; */
+}
+.learning-head 	a{
+	text-decoration: none;
+	color: #000;
+}
+.learning-head:before{
+	display: block;
+	content: "";
+	position: absolute;
+	width: 2111px;
+	height: 2111px;
+	border: 3px solid #000;
+	border-radius: 50%;
+	top: -1475.5px;
+	left: -73px;
+	z-index: -1;	
+}
+.learning-content{
+	display: flex;
+}
+.container h1{
+	margin: 20px 0 45px 95px;
+	font-size: 70px;
+	color: #ee2d42;
+	font-weight: bold;
+}
+.learning-content{
+	padding-left: 65px;
+	box-sizing: border-box;
+}
+
+.learning-text{
+	width: 50%;
+	padding-left: 60px;
+}
+.learning-text h3{
+	font-size: 30px;
+	color: #043458;
+	font-weight: bold;
+}
+.learning-text p{
+	margin-left: 37px;
+} 
+/* 学习之旅结束 */
+/* 团队见面开始 */
+.team-start{
+	position: relative;
+	width: 950px;
+	/* background: pink; */
+	height: 450px;
+	left: 15%;
+}
+.learning-slide{
+	/* position: relative; */
+	width: 800px;
+	/* background: pink; */
+	height: 400px;
+	margin-left: 8%;
+	overflow: hidden;
+	overflow-x: scroll;
+	
+}
+.learning-slide::-webkit-scrollbar {
+	  display: none;
+}
+.slide-btn p{
+	width: 26px;
+	height: 46px;
+	position: absolute;
+	top:35%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.slide-left{
+	display: none;
+	left:0;
+	background-image:url("../../img/tnnImg/btn-left.jpg");
+}
+.slide-right{
+	right:0;
+	background-image:url("../../img/tnnImg/btn-right.jpg");
+}
+.tear-h2{
+	font-size: 40px;
+	line-height: 50px;
+	padding:0 180px;
+	box-sizing: border-box;
+	font-weight: bold;
+	margin-bottom: 30px;
+	padding-left: 0;
+	
+}
+.slider{
+	width: 200%;
+	overflow:hidden;
+	/* margin-left: 8%; */
+	display: flex;
+	/* transition: 1s; */
+	justify-content: center;
+	
+	/* background: green;s */
+	/* white-space nowrap; */
+	
+}
+.learning-slide .slider .slide-box{
+	width: 800px;
+	height: 400px;
+	float: left;
+	display: flex;
+	justify-content: space-around;
+	margin: 0 auto;
+	display inline-block;
+}
+.slide-box li{
+	width: 30%;
+}
+
+.slide-box li img{
+	width: 220px;
+	height:220px;
+	
+}
+.slide-box li h3{
+	font-weight: bold;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+.slide-box li p{
+}
+/* 团队见面结束 */
+/* 自适应开始 */
+@media screen and (max-width: 767px){
+	.slider{
+		width: 600%;
+	}
+	/* 学习开始 */
+	.learning-public{
+		margin-bottom: 60px;
+	}
+	.container h1{
+		font-size: 22px;
+	}
+	.learning-content{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.learning-content-img{
+		width: 260px;
+		height: 260px;
+	}
+	.learning-text{
+		padding-left: 0;
+	}
+	.learning-text h3{
+		font-size: 16px;
+	}
+	.learning-text p{
+		width: 250px;
+		height: 110px;
+		font-size: 12px;
+	}
+	/* 见面开始 */
+	.slide-btn p{
+		width: 12px;
+		height: 22px;
+		background-repeat: no-repeat;
+	}
+	.tear-h2{
+		font-size: 20px;
+		padding: 0px;
+	}
+	.team-start{
+		width: 340px;
+	}
+	.learning-slide{
+		width: 240px;
+	}
+	.learning-slide{
+		margin-left: 13%;
+	}
+	.slide-box{
+		width: 220px;
+	}
+	.slide-box li{
+		width: 100%;
+	}
+	.slide-box li h3{
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	.slide-box li p{
+		font-size: 12px;
+	}
+}
+/* 自适应结束 */

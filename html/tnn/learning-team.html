@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>一起学习吧</title>
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+		<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../../css/tnnCss/learning-team.css"/>
+		<script type="text/javascript" src="../../js/jquery-3.3.1/jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="../../js/jquery.i18n.min.js"></script>
+	<!-- 	<script src="../../js/config/config.js"></script> -->
+	</head>
+	<body>
+		<div class="top-box" style="z-index: 999999;"></div>
+		<div class="mian-content" style="">
+			<!-- 学习之旅开始 -->
+			<div id="head-page"></div>
+			<div class="container learning-public">
+				<div class="learning-head visible-lg-block">
+					<a href="">首页</a> |
+					<a href="">教育团队</a>
+				</div>
+				<h1>一起学习吧</h1>
+				<div class="learning-content">
+					<div class="learning-img">
+						<img src="../../img/tnnImg/T10_01.png" alt="" class='img-responsive learning-content-img'>
+					</div>
+					<div class="learning-text">
+						<h3>学习之旅</h3>
+						<p>学习的过程也许并不容易，但在华尔街英语的你并非孤身奋战。作为我们的学员，你将得到我们的专业教学团队的全力支持，他们会为你的学习旅途提供帮助以助力你能达到目标。</p>
+					</div>
+				</div>
+			</div>
+			<!-- 学习之旅结束 -->
+			<!-- 与教学团队见面开始 -->
+			<div class="container-xs">
+			<div class="team-start">
+				<h2 class='tear-h2'>与教学团队见面</h2>
+				<div class="learning-slide">
+					<div class="slider">
+						<ul class="slide-box" >
+							<li class='col-md-12'>
+								<img src="../../img/tnnImg/T10_02_FT.png" class='img-responsive'>
+								<h3 i18n="title">课程顾问</h3>
+								<p i18n="content">根据你的专业和个人需求，帮助你制定适合的学习计划，并为你全程提供支持。</p>
+							</li>
+							<li class='col-md-12'>
+								<img src="../../img/tnnImg/T10_02_SA.png" class='img-responsive'>
+								<h3 i18n="title2">课程顾问</h3>
+								<p i18n="content2">根据你的专业和个人需求，帮助你制定适合的学习计划，并为你全程提供支持。</p>
+							</li>
+							<li class='col-md-12'>
+								<img src="../../img/tnnImg/T10_02_CC.png" class='img-responsive'>
+								<h3 i18n="title3">课程顾问</h3>
+								<p i18n="content3">根据你的专业和个人需求，帮助你制定适合的学习计划，并为你全程提供支持。</p>
+							</li>  
+						</ul>
+						<ul class="slide-box" >
+							<li>
+								<img src="../../img/tnnImg/T10_02_CC.png" >
+								<h3 i18n="title4">课程顾问</h3>
+								<p i18n="content4">根据你的专业和个人需求，帮助你制定适合的学习计划，并为你全程提供支持。</p>
+							</li>
+							<li>
+								<img src="../../img/tnnImg/T10_02_SM.png" >
+								<h3 i18n="title5">课程顾问</h3>
+								<p i18n="content5">根据你的专业和个人需求，帮助你制定适合的学习计划，并为你全程提供支持。</p>
+							</li>
+							<li>
+								<img src="../../img/tnnImg/T10_02_CSA.png" >
+								<h3 i18n="title6">课程顾问</h3>
+								<p i18n="content6">根据你的专业和个人需求，帮助你制定适合的学习计划，并为你全程提供支持。</p>
+							</li>
+						</ul>
+					</div>
+					<div class="slide-btn">
+						<p class='slide-left' data-index="-1">  </p>
+						<p class='slide-right' data-index="1">  </p>
+					</div>
+					
+					
+				</div>
+				
+				
+			</div>
+			</div>
+			<!-- 与教学团队见面结束 -->
+		</div>
+		<div  class="i18n" >
+			
+		</div>
+		<div class="footer" style='margin-top: 120px'></div>
+		<!-- <div i18n="footer.about">About</div>
+		<div i18n="footer.contact">Contact us</div> -->
+		<script>
+			// function bigSlide(){
+			// 	let iw=$('.slide-box').width();
+			// 	// console.log(iw);
+			// 	$('.slide-left').click(function(){
+			// 		$('.slider').css({'transform':'translateX(0px)'});
+			// 		$(this).css({'display':'none'});
+			// 		$('.slide-right').css({'display':'block'})
+			// 	});
+			// 	$('.slide-right').click(function(){
+			// 		$('.slider').css({'transform':'translateX(-800px)'});
+			// 		$(this).css({'display':'none'});
+			// 		$('.slide-left').css({'display':'block'});
+			// 	});
+			// }
+			
+			// function smallSlide(){
+			// 	var index=0;
+			// 	let iw=$('.slide-box li').outerWidth();
+			// 	$('.slide-right').click(function(){
+			// 		index++;
+			// 		console.log(index)
+			// 		$('.slider').css({'transform':"translateX(-"+iw*index+"px)"});
+			// 		if(index>=5){
+			// 			$(this).css({'display':'none'});
+			// 			$('.slide-left').css({'display':'block'});
+			// 		}
+			// 	});
+			// 	$('.slide-left').click(function(){
+			// 		index--;
+			// 		$('.slider').css({'transform':"translateX(-"+iw*index+"px)"});
+			// 		console.log(index)
+			// 		if(index<=0){
+			// 			$(this).css({'display':'none'});
+			// 			$('.slide-right').css({'display':'block'});
+			// 		}
+			// 		console.log(index);
+			// 	});
+			// }
+			
+			// // if($(document).width()>=767){
+			// // 	bigSlide();
+			// // }
+			// // if($(document).width()<=767){
+			// // 	smallSlide();
+			// // }
+			// $(window).resize(function(){
+			// 	let docIw=$(document).width();
+			// 	console.log(docIw)
+			// 	if(docIw>=767){
+			// 		bigSlide();
+			// 	}else{
+			// 		smallSlide();
+			// 	}
+				
+			// })
+		</script>
+	</body>
+	<script>
+		$('.top-box').load('../config/header.html');
+		$('.footer').load('../config/footer.html');
+		$(document).ready(function(){
+			/*默认语言*/
+			var defaultLang = "cn";
+			$("[i18n]").i18n({
+			    defaultLang: defaultLang,
+			    filePath: "../../i18n/",
+			    filePrefix: "i18n_",
+			    fileSuffix: "",
+			    forever: true,
+			    callback: function(data) {
+			        console.log("i18n has been completed.");
+					var i18n=$('.i18n');
+					console.log(i18n);
+			    }
+			});
+		})
+		$(function(){
+			let $slider = $(".slider");
+			let $ls = $(".learning-slide");
+			
+			let count = 0;
+			$(".slide-btn p").on('click',function(){
+				let size = $slider.width() / $ls.width();
+				
+				let index =  + $(this).data("index");
+				count += index;
+				console.log(count,size)
+				if(count >= size-1){
+					$(this).hide().siblings().show()
+				}else if(count <=0){
+					$(this).hide().siblings().show()
+				}else{
+					console.log("a")
+					$(this).siblings().show()
+				}
+				$slider.css({'transform':`translateX(${-count*$ls.width()}px)`})
+				$slider.css({'transition':'0.5s'})
+				
+			})
+		})
+	</script>
+</html>
