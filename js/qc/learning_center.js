@@ -1,14 +1,24 @@
-$('.gyheiyy').load('../config/config.html', function (){
+$('.gyheiyy').load('../../html/config/config.html',
+    function () {
+        $(this).append(
+            $('<link/>', {
+                rel: "stylesheet",
+                href: '../../css/config/config.css'
+            })
+        )
+        $(this).append(
+            $('<script></script>', {
+                src: '../../js/config/config.js'
+            })
+        )
+    }
+)
+$('.bottom').load('../qrf/At_the_bottom_of_the_public.html', function () {
     $(this).append(
-        $('<link/>', { rel:"stylesheet", href: '../../css/config/config.css'})
-    )
-    $(this).append(
-        $('<script></script>',{src: '../../js/config/config.js'})
-    )
-})
-$('.bottom').load('../qrf/At_the_bottom_of_the_public.html',function(){
-    $(this).append(
-        $('<link/>', { rel:"stylesheet", href: '../../css/qrf/At_the_bottom_of_the_public.css'})
+        $('<link/>', {
+            rel: "stylesheet",
+            href: '../../css/qrf/At_the_bottom_of_the_public.css'
+        })
     )
 })
 
@@ -270,7 +280,7 @@ setInterval(() => {
         $('.brief_text').css({
             display: 'name'
         })
-    }else{
+    } else {
         $('.city_img').css({
             display: 'block'
         })
