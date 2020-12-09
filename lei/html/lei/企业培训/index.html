@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<link rel="stylesheet" href="../../bootstrap-3.3.7-dist/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="train.css"/>
+		<link rel="stylesheet" href="../../../css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../css/lei/train.css"/>
 		<title></title>
 	</head>
 	<body>
@@ -26,7 +26,7 @@
 					</div>
 				</div>
 				<div class="train-mediabox">
-					<img src="../img/train/media/T22_01.jpg" alt="">
+					<img src="../../../img/lei/train/media/T22_01.jpg" alt="">
 					<h1>量身定制解决方案，<br/>
 让您更具全球竞争力</h1>
 				</div>
@@ -40,7 +40,7 @@
 					<div class="train-service">
 						<h1>我们的服务</h1>
 						<div>
-							<img src="../img/train/T22_02_corporate_solutions.png" alt="">
+							<img src="../../../img/lei/train/T22_02_corporate_solutions.png" alt="">
 							<h2>企业解决方案</h2>
 							<p>我们提供的全方位订制课程来帮助你的员工提高英语技能，使你的企业达到全球化目标。</p>
 							<div class="train-servicebtn">
@@ -48,7 +48,7 @@
 							</div>
 						</div>
 						<div>
-							<img src="../img/train/T22_02_executive_solutions.png" alt="">
+							<img src="../../../img/lei/train/T22_02_executive_solutions.png" alt="">
 							<h2>行政管理人员解决方案</h2>
 							<p>
 								我们的商务综合英语课程为中层管理人员和行政管理人员提<br/>供强有力的学习工具和他们所需的帮助，使他们的英语达到<br/>国际商业标准。
@@ -126,31 +126,31 @@
 							</div>
 							<div class="sign-box">
 								<div>
-									<img src="../img/train/logo-adidas.png" alt="">
+									<img src="../../../img/lei/train/logo-adidas.png" alt="">
 								</div>
 								<div>
-									<img src="../img/train/logo-cocacola.png" alt="">
+									<img src="../../../img/lei/train/logo-cocacola.png" alt="">
 								</div>
 								<div>
-									<img src="../img/train/logo-sony.png" alt="">
+									<img src="../../../img/lei/train/logo-sony.png" alt="">
 								</div>
 								<div>
-									<img src="../img/train/logo-microsoft.png" alt="">
+									<img src="../../../img/lei/train/logo-microsoft.png" alt="">
 								</div>
 								<div>
-									<img src="../img/train/logo-hsbc.png" alt="">
+									<img src="../../../img/lei/train/logo-hsbc.png" alt="">
 								</div>
 								<div>
-									<img src="../img/train/logo-hp.png" alt="">
+									<img src="../../../img/lei/train/logo-hp.png" alt="">
 								</div>
 								<div>
-									<img src="../img/train/logo-yyarroott.png" alt="">
+									<img src="../../../img/lei/train/logo-yyarroott.png" alt="">
 								</div>
 								<div>
-									<img src="../img/train/logo-citi.png" alt="">
+									<img src="../../../img/lei/train/logo-citi.png" alt="">
 								</div>
 								<div>
-									<img src="../img/train/logo-PG.png" alt="">
+									<img src="../../../img/lei/train/logo-PG.png" alt="">
 								</div>
 							</div>
 						</div>
@@ -190,8 +190,9 @@
 				</div>
 			</div>
 		</div>
-		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-		<script src="../../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<footer></footer>
+		<script src="../../../js/jquery.js"></script>
+		<script src="../../../js/bootstrap.min.js"></script>
 		<script>
 			(function() {
 				function resize() {
@@ -204,6 +205,14 @@
 				window.addEventListener('onorientationchange' in window ? 'orientationchange' : 'resize', resize);
 				window.addEventListener('DOMContentLoaded', resize);
 			})(document, window);
+			$('footer').load('../../config/footer.html', function () {
+
+  // $(this).find('.col-hotline_footer-box_img img').attr("src", "../../img/Eddie/image-student/wechar_qr.jpg")
+  // $(this).find('.col.col-display1 img').attr("src", "../../img/qrf/logo_wse_footer.png")
+  // $(this).find('.footer_security_record img').attr("src", "../../img/qrf/record_icon.png")
+  // $(this).find('.col-hotline_footer-box_img').css({ boxSizing: "content-box" })
+})
+
 		</script>
 	</body>
 </html>

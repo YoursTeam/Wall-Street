@@ -10,7 +10,7 @@
  }
  .train-img{
  	height: 9.62rem;
- 	background: url(../img/train/T22_01.jpg);
+ 	background: url(../../img/lei/train/T22_01.jpg);
  	background-repeat: no-repeat;
  	background-size:100% 100%;
  	width: 100%;
@@ -306,7 +306,7 @@
  	content:"";
  	width: 100%;
  	height: 0.6rem;
- 	background: url(../img/train/bg_footer_grey.png);
+ 	background: url(../../img/lei/train/bg_footer_grey.png);
  	position: absolute;
  	top:-0.5rem;
  	background-repeat: no-repeat;
@@ -669,7 +669,7 @@
 		content:"";
 		width: 100%;
 		height: 0.6rem;
-		background: url(../img/train/bg_footer_grey.png);
+		background: url(../../img/lei/train/bg_footer_grey.png);
 		position: absolute;
 		top:-0.5rem;
 		background-repeat: no-repeat;
