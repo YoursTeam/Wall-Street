@@ -1,4 +1,4 @@
-$('.gyheiyy').load('../../html/config/header.html')
+$('.gyheiyy').load('../../html/config/config.html')
 $('.bottom').load('../../html/config/footer.html')
 
 $('.selecticon').click(() => {

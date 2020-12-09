@@ -1,3 +1,5 @@
+$('.gyheiyy').load('../../html/config/config.html')
+$('.bottom').load('../../html/config/footer.html')
 let falag=true
 $('.ason-pc-unids').click(function(){
     $(this).addClass("tag").siblings().removeClass('tag');
@@ -11,5 +13,3 @@ $('.ason-pc-unids').click(function(){
     }
     
 })
-$('.gyheiyy').load('../../html/config/header.html')
-$('.bottom').load('../../html/config/footer.html')

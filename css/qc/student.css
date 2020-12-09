@@ -1,7 +1,6 @@
 .ason-student {
     overflow: hidden;
     position: relative;
-    z-index: -1;
 }
 .ason-student .banner {
     position: relative;
