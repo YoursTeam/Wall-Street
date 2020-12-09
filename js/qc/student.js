@@ -11,16 +11,5 @@ $('.ason-pc-unids').click(function(){
     }
     
 })
-$('.gyheiyy').load('../config/config.html', function (){
-    $(this).append(
-        $('<link/>', { rel:"stylesheet", href: '../../css/config/config.css'})
-    )
-    $(this).append(
-        $('<script></script>',{src: '../../js/config/config.js'})
-    )
-})
-$('.bottom').load('../qrf/At_the_bottom_of_the_public.html',function(){
-    $(this).append(
-        $('<link/>', { rel:"stylesheet", href: '../../css/qrf/At_the_bottom_of_the_public.css'})
-    )
-})
+$('.gyheiyy').load('../../html/config/header.html')
+$('.bottom').load('../../html/config/footer.html')
