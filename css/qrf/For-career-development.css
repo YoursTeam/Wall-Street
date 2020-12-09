@@ -721,6 +721,9 @@
 		left: 50%;
 		margin-left: -251px;
 	}
+	.clearfix{
+		display: none;
+	}
 	.persona__bottom__others{
 		padding: 28px 22px 56px;
 	}
